@@ -48,7 +48,7 @@
 <ul id="slider" class="rslides">
     <li>
         <div class="image" style="background-image: url('img/slider1_bg.jpg');"/>
-        <h1>Design Folk<span>Advertising Design Studio</span></h1>
+        <h1>Tang Long Design<span>Advertising Design Studio</span></h1>
         <h6>We dream, explore, create and craft progressive visual experiences</h6>
     </li>
     <li>
