@@ -8,8 +8,8 @@
     @yield('title')
 
     {{--css start--}}
-    {!! Html::style("Css/bootstrap.min.css") !!}
-    {!! Html::style("Css/animate.css") !!}
+    {!! Html::style("css/bootstrap.min.css") !!}
+    {!! Html::style("css/animate.css") !!}
 
     @yield('css')
     {{--css end--}}
