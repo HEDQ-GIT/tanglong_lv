@@ -85,7 +85,7 @@ return array(
 	 *
 	 * @type string
 	 */
-	'home_page' => 'promotions',
+	'home_page' => 'Promotions',
 
 	/**
 	 * The route to which the user will be taken when they click the "back to site" button
