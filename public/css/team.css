@@ -1,0 +1,592 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Satisfy);
+
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+html, body { 
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #333;
+	width:100%;
+	height: auto;
+	margin: 0;
+	background-color: #ececec;
+}
+
+h1 {
+	font-size: 36px;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+  	letter-spacing: 2px;
+  	word-spacing: 2px;
+  	color: #5b5b5b;
+}
+
+p{
+	font-size:1.2em;
+	font-weight: 100;
+}
+
+.red{
+	color: #FF4444;
+}
+
+.purple{
+	color: #5856D6;
+}
+
+.green{
+	color: #4CD964;
+}
+
+.yellow {
+	color: #FFCD02;
+}
+
+.blue{
+	color: #1D77EF;
+}
+
+.pink{
+	color:#FF4981;
+}
+
+.header-bar {
+	position: relative;
+}
+
+#copy {
+  color: #333;
+  font-size: 20px !important;
+  line-height: 32px;
+  width: 80%;
+  margin: 50px auto;
+  letter-spacing: 1px;
+  text-align: center;
+  clear: both;
+}
+
+/************************************************* Header menu hover effect start *************************************************/
+
+.header-bar{
+	width: 100%;
+	height: 50px;
+}
+
+#logo {
+	line-height: 50px;
+	margin-left: 10%;
+	font-size: 1.2em;
+	display: inline-block;
+}
+
+#menu {
+	margin-left: 30px;
+	display: inline-block;
+}
+
+#auth-menu {
+	position: absolute;
+	display: inline-block;
+	top: 15px;
+	right: 10%;
+}
+
+#menu a, #auth-menu a{
+	position: relative;
+	display: inline-block;
+	margin: 0px 20px;
+	outline: none;
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 1em;
+	overflow: hidden;
+	padding: 0 4px;
+	height: 16px;
+}
+
+.current-menu-item{
+	font-weight: 700;
+}
+
+.hover-anim {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.hover-anim:before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+}
+
+#menu a:hover span,
+#menu a:focus span,
+#auth-menu a:hover span,
+#auth-menu a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+/************************************************* Header menu hover effect end *************************************************/
+
+
+#summary{
+	width: 80%;
+	margin: 50px auto;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	clear: both;
+}
+
+
+/************************************************* Team list start *************************************************/
+.row {
+  max-width: 68.75em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 68.75em;
+  clear: both;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+.team {
+  margin: 70px auto 0 auto;
+}
+
+aboutmedia="screen"
+.constrained {
+  max-width: 68.75em;
+}
+
+.team>.row {
+  text-align: left;
+  margin: 0px 0px 80px 0px;
+}
+
+.row .row {
+  width: auto;
+  margin-bottom: 120px;
+  max-width: none;
+}
+
+.team .avatar {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  direction: ltr;
+}
+
+.team .name {
+  font-size: 1.25em;
+  line-height: 30px;
+}
+
+.team .title {
+  font-size: 1em;
+}
+
+.team .bio {
+  font-size: 1.0em;
+  line-height: 30px;
+  margin: 15px 0 0 0;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-weight: 100;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+@media only screen {
+    .row .column,
+    .row .columns {
+        position: relative;
+        padding-left: 0.9375em;
+        padding-right: 0.9375em;
+        float: left
+    }
+    .row .small-1 {
+        position: relative;
+        width: 8.33333%
+    }
+    .row .small-2 {
+        position: relative;
+        width: 16.66667%
+    }
+    .row .small-3 {
+        position: relative;
+        width: 25%
+    }
+    .row .small-4 {
+        position: relative;
+        width: 33.33333%
+    }
+    .row .small-5 {
+        position: relative;
+        width: 41.66667%
+    }
+    .row .small-6 {
+        position: relative;
+        width: 50%
+    }
+    .row .small-7 {
+        position: relative;
+        width: 58.33333%
+    }
+    .row .small-8 {
+        position: relative;
+        width: 66.66667%
+    }
+    .row .small-9 {
+        position: relative;
+        width: 75%
+    }
+    .row .small-10 {
+        position: relative;
+        width: 83.33333%
+    }
+    .row .small-11 {
+        position: relative;
+        width: 91.66667%
+    }
+    .row .small-12 {
+        position: relative;
+        width: 100%
+    }
+    .row .small-offset-1 {
+        position: relative;
+        margin-left: 8.33333%
+    }
+    .row .small-offset-2 {
+        position: relative;
+        margin-left: 16.66667%
+    }
+    .row .small-offset-3 {
+        position: relative;
+        margin-left: 25%
+    }
+    .row .small-offset-4 {
+        position: relative;
+        margin-left: 33.33333%
+    }
+    .row .small-offset-5 {
+        position: relative;
+        margin-left: 41.66667%
+    }
+    .row .small-offset-6 {
+        position: relative;
+        margin-left: 50%
+    }
+    .row .small-offset-7 {
+        position: relative;
+        margin-left: 58.33333%
+    }
+    .row .small-offset-8 {
+        position: relative;
+        margin-left: 66.66667%
+    }
+    .row .small-offset-9 {
+        position: relative;
+        margin-left: 75%
+    }
+    .row .small-offset-10 {
+        position: relative;
+        margin-left: 83.33333%
+    }
+    [class*="column"]+[class*="column"]:last-child {
+        float: right
+    }
+    [class*="column"]+[class*="column"].end {
+        float: left
+    }
+    .column.small-centered,
+    .columns.small-centered {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none
+    }
+}
+@media only screen and (min-width: 48em) {
+    .row .large-1 {
+        position: relative;
+        width: 8.33333%
+    }
+    .row .large-2 {
+        position: relative;
+        width: 16.66667%
+    }
+    .row .large-3 {
+        position: relative;
+        width: 25%
+    }
+    .row .large-4 {
+        position: relative;
+        width: 33.33333%
+    }
+    .row .large-5 {
+        position: relative;
+        width: 41.66667%
+    }
+    .row .large-6 {
+        position: relative;
+        width: 50%
+    }
+    .row .large-7 {
+        position: relative;
+        width: 58.33333%
+    }
+    .row .large-8 {
+        position: relative;
+        width: 66.66667%
+    }
+    .row .large-9 {
+        position: relative;
+        width: 75%
+    }
+    .row .large-10 {
+        position: relative;
+        width: 83.33333%
+    }
+    .row .large-11 {
+        position: relative;
+        width: 91.66667%
+    }
+    .row .large-12 {
+        position: relative;
+        width: 100%
+    }
+    .row .large-offset-1 {
+        position: relative;
+        margin-left: 8.33333%
+    }
+    .row .large-offset-2 {
+        position: relative;
+        margin-left: 16.66667%
+    }
+    .row .large-offset-3 {
+        position: relative;
+        margin-left: 25%
+    }
+    .row .large-offset-4 {
+        position: relative;
+        margin-left: 33.33333%
+    }
+    .row .large-offset-5 {
+        position: relative;
+        margin-left: 41.66667%
+    }
+    .row .large-offset-6 {
+        position: relative;
+        margin-left: 50%
+    }
+    .row .large-offset-7 {
+        position: relative;
+        margin-left: 58.33333%
+    }
+    .row .large-offset-8 {
+        position: relative;
+        margin-left: 66.66667%
+    }
+    .row .large-offset-9 {
+        position: relative;
+        margin-left: 75%
+    }
+    .row .large-offset-10 {
+        position: relative;
+        margin-left: 83.33333%
+    }
+    .push-2 {
+        position: relative;
+        left: 16.66667%;
+        right: auto
+    }
+    .pull-2 {
+        position: relative;
+        right: 16.66667%;
+        left: auto
+    }
+    .push-3 {
+        position: relative;
+        left: 25%;
+        right: auto
+    }
+    .pull-3 {
+        position: relative;
+        right: 25%;
+        left: auto
+    }
+    .push-4 {
+        position: relative;
+        left: 33.33333%;
+        right: auto
+    }
+    .pull-4 {
+        position: relative;
+        right: 33.33333%;
+        left: auto
+    }
+    .push-5 {
+        position: relative;
+        left: 41.66667%;
+        right: auto
+    }
+    .pull-5 {
+        position: relative;
+        right: 41.66667%;
+        left: auto
+    }
+    .push-6 {
+        position: relative;
+        left: 50%;
+        right: auto
+    }
+    .pull-6 {
+        position: relative;
+        right: 50%;
+        left: auto
+    }
+    .push-7 {
+        position: relative;
+        left: 58.33333%;
+        right: auto
+    }
+    .pull-7 {
+        position: relative;
+        right: 58.33333%;
+        left: auto
+    }
+    .push-8 {
+        position: relative;
+        left: 66.66667%;
+        right: auto
+    }
+    .pull-8 {
+        position: relative;
+        right: 66.66667%;
+        left: auto
+    }
+    .push-9 {
+        position: relative;
+        left: 75%;
+        right: auto
+    }
+    .pull-9 {
+        position: relative;
+        right: 75%;
+        left: auto
+    }
+    .push-10 {
+        position: relative;
+        left: 83.33333%;
+        right: auto
+    }
+    .pull-10 {
+        position: relative;
+        right: 83.33333%;
+        left: auto
+    }
+    .small-push-2 {
+        left: inherit
+    }
+    .small-pull-2 {
+        right: inherit
+    }
+    .small-push-3 {
+        left: inherit
+    }
+    .small-pull-3 {
+        right: inherit
+    }
+    .small-push-4 {
+        left: inherit
+    }
+    .small-pull-4 {
+        right: inherit
+    }
+    .small-push-5 {
+        left: inherit
+    }
+    .small-pull-5 {
+        right: inherit
+    }
+    .small-push-6 {
+        left: inherit
+    }
+    .small-pull-6 {
+        right: inherit
+    }
+    .small-push-7 {
+        left: inherit
+    }
+    .small-pull-7 {
+        right: inherit
+    }
+    .small-push-8 {
+        left: inherit
+    }
+    .small-pull-8 {
+        right: inherit
+    }
+    .small-push-9 {
+        left: inherit
+    }
+    .small-pull-9 {
+        right: inherit
+    }
+    .small-push-10 {
+        left: inherit
+    }
+    .small-pull-10 {
+        right: inherit
+    }
+    .column.large-centered,
+    .columns.large-centered {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none
+    }
+}
+
+/************************************************* Team list ends *************************************************/
+
+
+
+
+
+
+

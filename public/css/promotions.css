@@ -1,0 +1,133 @@
+/*body {*/
+    /*background: #fff;*/
+    /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+    /*font-size: 14px;*/
+    /*color:#000;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Satisfy);
+
+@font-face {
+    font-family: 'codropsicons';
+    src:url('../fonts/codropsicons/codropsicons.eot');
+    src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+    url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+    url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+html, body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #333;
+    width:100%;
+    height: auto;
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #5b5b5b;
+}
+
+p{
+    font-size:1.2em;
+    font-weight: 100;
+}
+
+.red{
+    color: #FF4444;
+}
+
+.purple{
+    color: #5856D6;
+}
+
+.green{
+    color: #4CD964;
+}
+
+.yellow {
+    color: #FFCD02;
+}
+
+.blue{
+    color: #1D77EF;
+}
+
+.pink{
+    color:#FF4981;
+}
+
+/*********************************** Start Promotion ***********************************/
+
+.promo{
+    margin: 50px 0;
+}
+
+.item{
+    text-align: center;
+    margin: 30px -15px;
+}
+
+.prom-img {
+    display: inline-block;
+}
+
+.title{
+    text-align: left;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.desc{
+    display:inline-block;
+    max-width: 50%;
+    font-weight: 100;
+    text-align:justify;
+    /*margin-left: 50px;*/
+
+}
+
+.price{
+    font-family: 'Clicker Script', cursive;
+    display: block;
+    text-align: left;
+    font-weight:700;
+    font-size: 3.5em;
+    margin:0;
+}
+
+.price > span{
+    font-size: 30%;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}

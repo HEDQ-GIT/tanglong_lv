@@ -1,0 +1,386 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Satisfy);
+
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+html, body { 
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #333;
+	width:100%;
+	height: auto;
+	margin: 0;
+}
+
+h1 {
+	font-size: 36px;
+	margin: 15px 0;
+	text-align: center;
+	font-weight: 300;
+  	letter-spacing: 2px;
+  	word-spacing: 2px;
+  	color: #5b5b5b;
+}
+
+p{
+	font-size:1.2em;
+	font-weight: 100;
+	color: #333;
+}
+
+.red{
+	color: #FF4444;
+}
+
+.purple{
+	color: #5856D6;
+}
+
+.green{
+	color: #4CD964;
+}
+
+.yellow {
+	color: #FFCD02;
+}
+
+.blue{
+	color: #1D77EF;
+}
+
+.pink{
+	color:#FF4981;
+}
+.header-bar{
+	width: 100%;
+}
+
+#logo {
+	line-height: 50px;
+	margin-left: 10%;
+	font-size: 1.05em;
+	color: #333;
+	display: inline-block;
+}
+
+#menu {
+	margin-left: 30px;
+	display: inline-block;
+}
+
+#auth-menu {
+	position: absolute;
+	display: inline-block;
+	top: 15px;
+	right: 10%;
+}
+
+#menu a, #auth-menu a{
+	position: relative;
+	display: inline-block;
+	padding: 0px 24px;
+	outline: none;
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 0.87em;
+	overflow: hidden;
+	height: 16px;
+}
+
+.current-menu-item{
+	font-weight: 700;
+}
+
+.hover-anim {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.hover-anim:before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+}
+
+#menu a:hover span,
+#menu a:focus span,
+#auth-menu a:hover span,
+#auth-menu a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+#summary{
+	width: 80%;
+	margin: 50px auto;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	clear: both;
+}
+
+#summary > p{
+	text-align: center;
+}
+
+/** Map start **/
+
+#contact-info{
+	position: relative;
+	margin-top: 80px;
+	text-align:center;
+}
+
+#map-wraper{
+	display: inline-block;
+    position: relative;
+    width: 40%;
+}
+
+#dummy {
+    margin-top: 100%;
+}
+
+#map-canvas{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 7px solid #073148;
+}
+
+
+#liens-contact{
+	display: inline-block;
+    padding: 0;
+  	list-style-type: none;
+}
+
+#contact{
+	display: inline-block;
+	margin-left: 80px;
+	vertical-align: top;
+	margin-top: 18%;
+}
+
+#contact > div {
+  margin-right: 35px;
+  display: inline-block;
+  width: 200px;
+  height: auto;
+}
+
+#contact p{
+	text-align: center;
+}
+
+.pastille-picto.mail {
+  background: #fd5276;
+}
+
+.pastille-picto.tel {
+  background: #6ac6c8;
+}
+
+.pastille-picto {
+  display: block;
+  width: 180px;
+  height: 180px;
+  -webkit-border-radius: 180px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 180px;
+  -moz-background-clip: padding;
+  border-radius: 180px;
+  background-clip: padding-box;
+  margin: -63px auto 24px auto;
+  border: 7px solid #073148;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.picto-mail {
+  display: block;
+  width: 109px;
+  height: 106px;
+  background: url('http://www.proximis.com/wp-content/themes/proximis/layoutImg/pictos/icon-mail-big.png') no-repeat center center;
+  position: absolute;
+  top: 50%;
+  margin-top: -55px;
+  left: 50%;
+  margin-left: -63px;
+}
+
+.picto-tel {
+  display: block;
+  width: 63px;
+  height: 105px;
+  background: url('http://www.proximis.com/wp-content/themes/proximis/layoutImg/pictos/icon-tel-big.png') no-repeat center center;
+  position: absolute;
+  top: 50%;
+  margin-top: -56px;
+  left: 50%;
+  margin-left: -31px;
+}
+
+#address{
+	text-align: center;
+	margin-left: 10%;
+	width: 100%;
+	position: absolute;
+	bottom: -48px;
+	padding: 0;
+	margin: 0;
+}
+
+#contact-form {
+	width: 60%;
+	margin: 0 auto;	
+	text-align: right;
+}
+
+.text{
+	width: 48.8%;
+	font-size: 1.05em;
+	padding: 5px 4px;
+	font-weight: 100;
+	display: inline-block;
+	border: none;
+	border-radius: 2px;
+}
+
+#name-input {
+	float: left;
+	margin-right: 1%;
+	padding: 15px 5px;
+}
+
+#email-input {
+	margin-left: 1%;
+	padding: 15px 5px;
+}
+
+.message {
+	display: block;
+	width: 100%;
+	font-size: 1.05em;
+	font-weight: 300;
+	padding: 5px;
+	border: none;
+	margin: 20px auto;
+	border-radius: 2px;
+}
+
+#submit {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.05em;
+	color: #fff;
+	padding: 6px 12px;
+	border: 3px solid #fff;
+	border-radius: 4px;
+	background-color: transparent;
+}
+
+#submit:hover {
+	color: #333;
+	background: #fff;
+}
+
+#form-sec{
+	margin-top: 80px;
+	padding-top: 60px;
+	background-color: #e8e8e8;
+}
+
+
+/** Map end **/
+
+#copy {
+  color: #333;
+  font-size: 20px !important;
+  line-height: 32px;
+  width: 80%;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 30px 0;
+  clear: both;
+}
+
+
+@media screen and (max-width : 760px){
+	#contact{
+		display: block;
+		margin:18% 0 0 0;
+	}
+}
+
+@media screen and (max-width : 	580px){
+	#contact{
+		display: block;
+		margin:24% 0 0 0;
+	}
+	
+	#map-wraper{
+		width: 360px;
+	}
+	
+	#contact > div{
+		width:100%;
+		text-align: center;
+		display: block;
+		margin:18% 0 0 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
