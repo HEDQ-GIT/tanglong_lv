@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
 
     <script src="js/jquery-2.1.1.min.js"></script>
-    {{--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>--}}
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script>
         $(function () {
             $('#slide-menu-btn').click(function(){
@@ -18,23 +18,23 @@
             });
         });
 
-//        function initialize() {
-//            var mapOptions = {
-//                zoom: 16,
-//                center: new google.maps.LatLng(1.355261,103.8798769)
-//            }
-//            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-//
-//            var image = 'img/pin.png';
-//            var myLatLng = new google.maps.LatLng(1.355261,103.8798769);
-//            var beachMarker = new google.maps.Marker({
-//                position: myLatLng,
-//                map: map,
-//                icon: image
-//            });
-//        }
-//
-//        google.maps.event.addDomListener(window, 'load', initialize);
+        function initialize() {
+            var mapOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(1.355261,103.8798769)
+            }
+            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            var image = 'img/pin.png';
+            var myLatLng = new google.maps.LatLng(1.355261,103.8798769);
+            var beachMarker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                icon: image
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </head>
 <body>
