@@ -104,6 +104,8 @@
     <section id="summary">
         <h1>SUPER PROMOTION</h1>
     </section>
+    <img class="pulp" src="img/heart.gif" height="128" width="128">
+
     {{--<div class="swiper-wrapper">--}}
         {{--<div class="swiper-slide" style="background: url(/img/pmt1.jpg) no-repeat;background-position: center;">--}}
             {{--<img src="img/pmt1.jpg" alt=""/>--}}
