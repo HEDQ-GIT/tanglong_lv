@@ -28,21 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="promotions.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="promotions.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome/promotions.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67209774" vertical-offset="2880" max-vertical-offset="6000">
-              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.923077" vertical-offset="2880" max-vertical-offset="6000">
+              <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="promotions.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="promotions.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/promotions.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4437" max-vertical-offset="5100">
-              <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.50276244" vertical-offset="3897" max-vertical-offset="5100">
+              <caret line="139" column="36" selection-start-line="139" selection-start-column="36" selection-end-line="139" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -96,8 +96,8 @@
         <option value="$PROJECT_DIR$/.env.example" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/welcome/contact.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/promotions.css" />
         <option value="$PROJECT_DIR$/resources/views/welcome/promotions.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/promotions.css" />
       </list>
     </option>
   </component>
@@ -953,18 +953,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/promotions.css">
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome/promotions.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4437" max-vertical-offset="5100">
-          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+        <state vertical-scroll-proportion="-6.923077" vertical-offset="2880" max-vertical-offset="6000">
+          <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome/promotions.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/css/promotions.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67209774" vertical-offset="2880" max-vertical-offset="6000">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.50276244" vertical-offset="3897" max-vertical-offset="5100">
+          <caret line="139" column="36" selection-start-line="139" selection-start-column="36" selection-end-line="139" selection-end-column="36" />
           <folding />
         </state>
       </provider>

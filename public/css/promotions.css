@@ -135,9 +135,9 @@ p{
 
 
 img.pulp {
-    -webkit-animation: pulp 2s infinite linear normal none;
-    -o-animation: pulp 2s infinite linear normal none;
-    animation: pulp 2s infinite linear normal none;
+    -webkit-animation: pulp 2s infinite ease normal none;
+    -o-animation: pulp 2s infinite ease normal none;
+    animation: pulp 2s infinite ease normal none;
 }
 @-webkit-keyframes pulp {
     0% {
