@@ -1,39 +1,59 @@
 <!DOCTYPE html>
-<!-- saved from url=(0024)http://www.squireel.com/ -->
 <html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-<title>Your collection, one step further | Squireel</title>
+<title>Tanglong Design</title>
 <link rel="icon" type="image/png" href="../favicon.ico">
 
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/headermenu.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/video.css">
 <link rel="stylesheet" type="text/css" href="css/service.css">
 
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script>
+    $(function () {
+        $('#slide-menu-btn').click(function(){
+            $('body').toggleClass('menu-active');
+        });
+    });
+</script>
 
 </head>
-<body lang="en" class="">
-<section class="container" id="coming">
+<body>
+<nav id="slide-menu">
+    <a id="slide-menu-btn" class="glyphicon glyphicon-align-justify"></a>
+    <ul>
+        <li><a href="{{ url('/') }}">HOME</a></li>
+        <li><a href="{{ url('/about') }}">ABOUT</a></li>
+        <li><a href="{{ url('/services') }}">SERVICE</a></li>
+        <li><a href="{{ url('/promotions') }}">PROMOTION</a></li>
+        <li><a href="{{ url('/works') }}">PORTFOLIO</a></li>
+        <li><a href="{{ url('/contact') }}">CONTACT</a></li>
+    </ul>
+</nav>
+
+<section id="coming">
     <section class="banner">
         <img src="img/team3.jpg" alt="" class="banner-cover" style="height: 650px; width: 1281.94444444444px; margin: 0px 0px 0px -1.97222222222229px; transform: translateY(132.6px);">
         <i class="arrow-scroll-white"></i>
 
-        <div id="header-bar">
+        <section id="header-bar">
             <div id="logo">TANGLONG LOGO</div>
             <nav id="menu">
-                <a href="index.html" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
-                <a href="about.html" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
-                <a href="service.html" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
-                <a href="#" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
-                <a href="portfolio.html" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
-                <a href="contact.html" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
+                <a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
+                <a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
+                <a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
+                <a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
+                <a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
+                <a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
             </nav>
             <nav id="auth-menu">
-                <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文</span></a>
+                <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>
             </nav>
-        </div>
+        </section>
 
         <div id="header-info">
             <h1>We Know Design by Heart</h1>
@@ -165,10 +185,9 @@
     </section>
 </section>
 
-<script src="js/jquery-2.1.1.min.js"></script>
+{{--<script src="js/jquery.js"></script>--}}
 <script src="js/video.js"></script>
 <script src="js/easing.js"></script>
 <script src="js/coming.js"></script>
 
-</body>
-</html>
+</body></html>

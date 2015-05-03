@@ -33,9 +33,13 @@ app.controller('MainCtrl', function ($scope, $http) {
             //alert(data);
             $.magnificPopup.open({
                 items: {
-                    src: data, // can be a HTML string, jQuery object, or CSS selector
+                    //src: data, // can be a HTML string, jQuery object, or CSS selector
+                    src: '<div class="white-popup"><div class="mfp-close">X</div>' + data + '</div>', // can be a HTML string, jQuery object, or CSS selector
+                    //
                     type: 'inline'
-                }
+                },
+                closeBtnInside: true
+
             });
         }).error(function (data, status) {
             alert('getWorkDetail fail');

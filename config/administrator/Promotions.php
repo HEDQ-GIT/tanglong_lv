@@ -64,4 +64,24 @@ return array(
 //            )
         )
     ),
+    'sort' => array(
+        'field' => 'id',
+        'direction' => 'asc',
+    ),
+    'filters' => array(
+        'id',
+        'title' => array(
+            'title' => 'Title',
+        ),
+        'description' => array(
+            'title' => 'Description',
+        ),
+        'expiredate' => array(
+            'title' => 'Expire',
+            'type' => 'date',
+        ),
+        'discount' => array(
+            'title' => 'Discount'
+        ),
+    ),
 );

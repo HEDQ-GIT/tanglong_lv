@@ -4,51 +4,65 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Simple icons</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/headermenu.css" />
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
 
+    <script src="js/jquery-2.1.1.min.js"></script>
     {{--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>--}}
-    {{--<script>--}}
-        {{--function initialize() {--}}
-            {{--var mapOptions = {--}}
-                {{--zoom: 16,--}}
-                {{--center: new google.maps.LatLng(1.355261,103.8798769)--}}
-            {{--}--}}
-            {{--var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);--}}
-
-            {{--var image = 'img/pin.png';--}}
-            {{--var myLatLng = new google.maps.LatLng(1.355261,103.8798769);--}}
-            {{--var beachMarker = new google.maps.Marker({--}}
-                {{--position: myLatLng,--}}
-                {{--map: map,--}}
-                {{--icon: image--}}
-            {{--});--}}
-        {{--}--}}
-
-        {{--google.maps.event.addDomListener(window, 'load', initialize);--}}
-    {{--</script>--}}
-    {!! Html::script('js/angular.min.js') !!}
-    {!! Html::script('js/works.js') !!}
     <script>
-        var emailUrl = "{{ URL('/contact/email') }}";
+        $(function () {
+            $('#slide-menu-btn').click(function(){
+
+                $('body').toggleClass('menu-active');
+            });
+        });
+
+//        function initialize() {
+//            var mapOptions = {
+//                zoom: 16,
+//                center: new google.maps.LatLng(1.355261,103.8798769)
+//            }
+//            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+//
+//            var image = 'img/pin.png';
+//            var myLatLng = new google.maps.LatLng(1.355261,103.8798769);
+//            var beachMarker = new google.maps.Marker({
+//                position: myLatLng,
+//                map: map,
+//                icon: image
+//            });
+//        }
+//
+//        google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </head>
-<body  ng-app="app" ng-controller="MainCtrl">
-{{--<section class="header-bar">--}}
-    {{--<div id="logo">TANGLONG LOGO</div>--}}
-    {{--<nav id="menu">--}}
-        {{--<a href="index.html" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>--}}
-        {{--<a href="about.html" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>--}}
-        {{--<a href="service.html" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>--}}
-        {{--<a href="#" class="service-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>--}}
-        {{--<a href="portfolio.html" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>--}}
-        {{--<a href="contact.html" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>--}}
-    {{--</nav>--}}
-    {{--<nav id="auth-menu">--}}
-        {{--<a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文</span></a>--}}
-    {{--</nav>--}}
-{{--</section>--}}
-@include('common.top-menu')
-
+<body>
+<nav id="slide-menu">
+    <a id="slide-menu-btn" class="glyphicon glyphicon-align-justify"></a>
+    <ul>
+        <li><a href="{{ url('/') }}">HOME</a></li>
+        <li><a href="{{ url('/about') }}">ABOUT</a></li>
+        <li><a href="{{ url('/services') }}">SERVICE</a></li>
+        <li><a href="{{ url('/promotions') }}">PROMOTION</a></li>
+        <li><a href="{{ url('/works') }}">PORTFOLIO</a></li>
+        <li><a href="{{ url('/contact') }}">CONTACT</a></li>
+    </ul>
+</nav>
+<section class="header-bar">
+    <div id="logo">TANGLONG LOGO</div>
+    <nav id="menu">
+        <a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
+        <a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
+        <a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
+        <a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
+        <a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
+        <a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
+    </nav>
+    <nav id="auth-menu">
+        <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>
+    </nav>
+</section>
 
 <section id="summary">
     <h1>Want to know more?</h1>
@@ -74,7 +88,6 @@
         </div>
     </div>
 </section>
-
 <section id="form-sec">
     <h1>Want to know more?</h1>
     <form id="contact-form" ng-submit="submitContact()">
@@ -95,21 +108,19 @@
 </html>
 
 
-{{--**********************************************************************************************--}}
-{{--test email--}}
-{{--@extends('layout.master')--}}
-{{--@section('head-js')--}}
-    {{--{!! Html::script('js/angular.min.js') !!}--}}
-   {{--{!! Html::script('js/works.js') !!}--}}
-    {{--<script>--}}
-        {{--var emailUrl = "{{ URL('/contact/email') }}";--}}
-    {{--</script>--}}
-{{--@stop--}}
 
-{{--@section('content')--}}
-    {{--<a ng-click="testEmail()" class="btn btn-primary">email me</a>--}}
-    {{--<a href="{{ URL('/contact/email') }}" class="btn btn-primary">email me</a>--}}
 
-    {{--@include('forms.contactus')--}}
 
-{{--@stop--}}
+
+
+
+
+
+
+
+
+
+
+
+
+

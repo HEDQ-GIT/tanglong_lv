@@ -28,5 +28,6 @@
                 This is just block of HTML, loaded via ajaxloaded via ajax</p>
         </div>
     </div>
+
     <div style="clear:both; line-height: 0;"></div>
 </div>

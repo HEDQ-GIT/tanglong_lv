@@ -1,10 +1,12 @@
 @extends('layout.master')
 
 @section('css')
+    {!! Html::style("css/headermenu.css") !!}
     {!! Html::style("css/works.css") !!}
     {!! Html::style("css/magnific-popup.css") !!}
     {!! Html::style("css/lightbox.css") !!}
     {!! Html::style("css/aboutcomy.css") !!}
+
 @stop
 
 @section('head-js')
@@ -26,17 +28,45 @@
 
 @section('content')
     <!-- header start -->
+    <nav id="slide-menu">
+        <a id="slide-menu-btn" class="glyphicon glyphicon-align-justify"></a>
+        <ul>
+            <li><a href="{{ url('/') }}">HOME</a></li>
+            <li><a href="{{ url('/about') }}">ABOUT</a></li>
+            <li><a href="{{ url('/services') }}">SERVICE</a></li>
+            <li><a href="{{ url('/promotions') }}">PROMOTION</a></li>
+            <li><a href="{{ url('/works') }}">PORTFOLIO</a></li>
+            <li><a href="{{ url('/contact') }}">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="header-bar">
+        <div id="logo">TANGLONG LOGO</div>
+        <nav id="menu">
+            <a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
+            <a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
+            <a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
+            <a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
+            <a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
+            <a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
+        </nav>
+        <nav id="auth-menu">
+            <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>
+        </nav>
+    </section>
+
+
     <ul id="slider" class="rslides">
         <li>
             <div class="image" style="background-image: url('img/demo-2-bg.jpg');"/>
             <h1>Tang Long Design<span>Advertising Design Studio</span></h1>
             <h6>At Tang Long Design, each project is considered new and developed with passion!</h6>
         </li>
-        <li>
-            <div class="image" style="background-image: url('img/demo-1-bg.jpg');"/>
-            <h1>Tang Long Design<span>Advertising Design Studio</span></h1>
-            <h6>At Tang Long Design, each project is considered new and developed with passion!</h6>
-        </li>
+        {{--<li>--}}
+            {{--<div class="image" style="background-image: url('img/demo-1-bg.jpg');"/>--}}
+            {{--<h1>Tang Long Design<span>Advertising Design Studio</span></h1>--}}
+            {{--<h6>At Tang Long Design, each project is considered new and developed with passion!</h6>--}}
+        {{--</li>--}}
         <li>
             <div class="image" style="background-image: url('img/slider2_bg.jpg');"/>
             <h1>Tang Long Design<span>Advertising Design Studio</span></h1>

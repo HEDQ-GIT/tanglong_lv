@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/about.css" />
 
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
     <script type="text/javascript">
@@ -26,29 +25,45 @@
                 $('#bx_' + id).addClass('visible');
                 e.preventDefault();
             });
+
+            $('#slide-menu-btn').click(function(){
+                $('body').toggleClass('menu-active');
+            });
         });
     </script>
 </head>
 <body>
+<nav id="slide-menu">
+    <a id="slide-menu-btn" class="glyphicon glyphicon-align-justify"></a>
+    <ul>
+        <li><a href="{{ url('/') }}">HOME</a></li>
+        <li><a href="{{ url('/about') }}">ABOUT</a></li>
+        <li><a href="{{ url('/services') }}">SERVICE</a></li>
+        <li><a href="{{ url('/promotions') }}">PROMOTION</a></li>
+        <li><a href="{{ url('/works') }}">PORTFOLIO</a></li>
+        <li><a href="{{ url('/contact') }}">CONTACT</a></li>
+    </ul>
+</nav>
+
 <section class="header-bar">
     <div id="logo">TANGLONG LOGO</div>
     <nav id="menu">
-        <a href="index.html" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
-        <a href="about.html" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
-        <a href="service.html" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
-        <a href="#" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
-        <a href="portfolio.html" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
-        <a href="contact.html" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
+        <a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
+        <a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
+        <a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
+        <a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
+        <a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
+        <a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
     </nav>
     <nav id="auth-menu">
-        <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文</span></a>
+        <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>
     </nav>
 </section>
 
 <ul id="slider" class="rslides">
     <li>
         <div class="image" style="background-image: url('img/slider1_bg.jpg');"/>
-        <h1>Tang Long Design<span>Advertising Design Studio</span></h1>
+        <h1>Design Folk<span>Advertising Design Studio</span></h1>
         <h6>We dream, explore, create and craft progressive visual experiences</h6>
     </li>
     <li>

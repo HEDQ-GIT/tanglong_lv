@@ -27,7 +27,7 @@
         <a href="contact.html" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
     </nav>
     <nav id="auth-menu">
-        {{--<a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文</span></a>--}}
+        <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文</span></a>
     </nav>
     <a id="slide-menu-btn" class="glyphicon glyphicon-align-justify"></a>
 </section>

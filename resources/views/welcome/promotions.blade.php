@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="/css/swiper.min.css">
     {!! Html::style("css/works.css") !!}
     {!! Html::style("css/promotions.css") !!}
+    <link rel="stylesheet" type="text/css" href="css/headermenu.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+
 
 
     <!-- Demo styles -->
@@ -32,11 +35,11 @@
             /*background: url(/img/slider3_bg.jpg);*/
             background-color: #ffffff;
             text-align: center;
-            padding: 30px 30px;
+            padding: 30px 30px 0;
         }
 
         .swiper-promotion h1 {
-            font-size: 100px;
+            /*font-size: 100px;*/
         }
 
         .swiper-promotion h5 {
@@ -66,12 +69,41 @@
 {{--<div class="menu">--}}
 
 {{--</div>--}}
-@include('common.top-menu')
+{{--@include('common.top-menu')--}}
+
+<nav id="slide-menu">
+    <a id="slide-menu-btn" class="glyphicon glyphicon-align-justify"></a>
+    <ul>
+        <li><a href="{{ url('/') }}">HOME</a></li>
+        <li><a href="{{ url('/about') }}">ABOUT</a></li>
+        <li><a href="{{ url('/services') }}">SERVICE</a></li>
+        <li><a href="{{ url('/promotions') }}">PROMOTION</a></li>
+        <li><a href="{{ url('/works') }}">PORTFOLIO</a></li>
+        <li><a href="{{ url('/contact') }}">CONTACT</a></li>
+    </ul>
+</nav>
+
+<section class="header-bar">
+    <div id="logo">TANGLONG LOGO</div>
+    <nav id="menu">
+        <a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
+        <a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
+        <a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
+        <a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
+        <a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
+        <a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
+    </nav>
+    <nav id="auth-menu">
+        <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>
+    </nav>
+</section>
 
 <!-- Swiper -->
 <div class="swiper-promotion">
-    <h1>SUPER PROMOTION</h1>
-
+    {{--<h1>SUPER PROMOTION</h1>--}}
+    <section id="summary">
+        <h1>SUPER PROMOTION</h1>
+    </section>
     {{--<div class="swiper-wrapper">--}}
         {{--<div class="swiper-slide" style="background: url(/img/pmt1.jpg) no-repeat;background-position: center;">--}}
             {{--<img src="img/pmt1.jpg" alt=""/>--}}
