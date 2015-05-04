@@ -25,7 +25,7 @@ Message:
 <br/><br/>
 Have a great cooperation!
 <br/><br/>
-Thanks for hiring <em>Ekoolab</em>!
+Thanks for hiring <em>Ekoolab</em> !
 
 </body>
 </html>
