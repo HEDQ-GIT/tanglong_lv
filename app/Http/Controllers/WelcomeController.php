@@ -129,8 +129,8 @@ class WelcomeController extends Controller
     {
         $email = 'he-dq@foxmail.com';
 //        $email = 'niu2yue@gmail.com';
-        $name = 'TangLong';
-        $subject = 'You hava a new project!';
+        $name = '';
+        $subject = 'You hava a new customer!';
 
         //content
         $customName = $request->input('name');

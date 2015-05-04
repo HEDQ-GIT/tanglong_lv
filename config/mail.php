@@ -57,7 +57,7 @@ return [
 	/**
 	 * DQ-customized
 	 */
-	'from' => ['address' => 'he-dq@ekoolab.com', 'name' => 'Laravel Mail'],
+	'from' => ['address' => 'info@ekoolab.com', 'name' => 'Ekoolab Mail'],
 
 	/*
 	|--------------------------------------------------------------------------
