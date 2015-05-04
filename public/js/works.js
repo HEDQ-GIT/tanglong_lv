@@ -46,16 +46,16 @@ app.controller('MainCtrl', function ($scope, $http) {
         });
     }
 
-    $scope.testEmail = function() {
-        alert(emailUrl);
-        $http({
-            method: 'POST',
-            url: emailUrl
-        }).success(function (data, status) {
-           alert(data);
-        }).error(function (data, status) {
-            alert(0);
-        });
+    $scope.shareFB = function() {
+        alert('fb');
+        //$http({
+        //    method: 'POST',
+        //    url: emailUrl
+        //}).success(function (data, status) {
+        //   alert(data);
+        //}).error(function (data, status) {
+        //    alert(0);
+        //});
     }
     $scope.formData = {};
 

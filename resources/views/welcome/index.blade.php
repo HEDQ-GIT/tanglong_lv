@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
 
     <script src="js/jquery-2.1.1.min.js"></script>
+    {!! Html::script('js/angular.min.js') !!}
+    {!! Html::script('js/index.js') !!}
     <script type="text/javascript">
         $(function () {
             var cw = $('.team-member').width();
@@ -22,7 +24,7 @@
         });
     </script>
 </head>
-<body>
+<body ng-app="app" ng-controller="MainCtrl">
 <div id="main">
     <nav id="slide-menu">
         <a id="slide-menu-btn" class="glyphicon glyphicon-align-justify"></a>
@@ -230,8 +232,9 @@
                 <ul class="list-inline banner-social-buttons">
                     <li><a href="" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="">TWITTER</span></a>
                     </li>
-                    <li><a href="" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="">FACEBOOK</span></a>
-                    </li>
+                    {{--<li><a href="" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="">FACEBOOK</span></a>--}}
+                    {{--</li>--}}
+                    <li><a ng-click="shareFB()" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="">FACEBOOK</span></a></li>
                     <li><a href="" class="btn btn-default btn-lg"><i class="fa fa-rss fa-fw"></i> <span class="">BLOG</span></a></li>
                 </ul>
                 <p class="copy">© 2014 TANGLONG DESIGN</p>

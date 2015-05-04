@@ -13,6 +13,7 @@
 
 <script src="js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/modernizr.js"></script>
+
 <script>
     $(function () {
         $('#slide-menu-btn').click(function(){
