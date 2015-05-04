@@ -143,7 +143,7 @@ class WelcomeController extends Controller
         {
             $message->to($data['email'])->subject($data['subject']);
         });
-        return 'Email sent';
+        return 'Your email has been sent and we will serve you ASAP !';
     }
 
 
