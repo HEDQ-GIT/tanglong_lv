@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-<title>Tanglong Design</title>
+<title>TangLong Services</title>
 <link rel="icon" type="image/png" href="../favicon.ico">
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />

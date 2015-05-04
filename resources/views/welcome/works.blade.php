@@ -1,5 +1,8 @@
 @extends('layout.master')
 
+@section('title')
+    <title>TangLong Works</title>
+    @stop
 @section('css')
     {!! Html::style("css/headermenu.css") !!}
     {!! Html::style("css/works.css") !!}

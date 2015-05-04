@@ -2,7 +2,7 @@
 <html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8" />
-    <title>ekoo about</title>
+    <title>About TangLong</title>
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/headermenu.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />

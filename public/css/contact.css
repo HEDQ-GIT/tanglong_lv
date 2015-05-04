@@ -226,7 +226,7 @@ p{
   display: block;
   width: 109px;
   height: 106px;
-  background: url('http://www.proximis.com/wp-content/themes/proximis/layoutImg/pictos/icon-mail-big.png') no-repeat center center;
+  background: url('/img/icon-mail-big.png') no-repeat center center;
   position: absolute;
   top: 50%;
   margin-top: -55px;
@@ -238,7 +238,7 @@ p{
   display: block;
   width: 63px;
   height: 105px;
-  background: url('http://www.proximis.com/wp-content/themes/proximis/layoutImg/pictos/icon-tel-big.png') no-repeat center center;
+  background: url('/img/icon-tel-big.png') no-repeat center center;
   position: absolute;
   top: 50%;
   margin-top: -56px;
