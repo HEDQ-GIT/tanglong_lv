@@ -62,6 +62,8 @@ app.controller('MainCtrl', function ($scope, $http) {
     $scope.submitContact = function() {
         //$scope.formData.data = new Date();
         //alert($scope.formData);
+        alert(emailUrl);
+
         $http({
             method: 'POST',
             url: emailUrl,

@@ -7,9 +7,12 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/headermenu.css" />
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
-
     <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+
+    {!! Html::script('js/angular.min.js') !!}
+    {!! Html::script('js/works.js') !!}
+
+    {{--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>--}}
     <script>
         $(function () {
             $('#slide-menu-btn').click(function(){
@@ -18,26 +21,27 @@
             });
         });
 
-        function initialize() {
-            var mapOptions = {
-                zoom: 16,
-                center: new google.maps.LatLng(1.355261,103.8798769)
-            }
-            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        var emailUrl = '{{url("/contact/email/")}}';
+        {{--function initialize() {--}}
+            {{--var mapOptions = {--}}
+                {{--zoom: 16,--}}
+                {{--center: new google.maps.LatLng(1.355261,103.8798769)--}}
+            {{--}--}}
+            {{--var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);--}}
 
-            var image = 'img/pin.png';
-            var myLatLng = new google.maps.LatLng(1.355261,103.8798769);
-            var beachMarker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                icon: image
-            });
-        }
+            {{--var image = 'img/pin.png';--}}
+            {{--var myLatLng = new google.maps.LatLng(1.355261,103.8798769);--}}
+            {{--var beachMarker = new google.maps.Marker({--}}
+                {{--position: myLatLng,--}}
+                {{--map: map,--}}
+                {{--icon: image--}}
+            {{--});--}}
+        {{--}--}}
 
-        google.maps.event.addDomListener(window, 'load', initialize);
+        {{--google.maps.event.addDomListener(window, 'load', initialize);--}}
     </script>
 </head>
-<body>
+<body ng-app="app" ng-controller="MainCtrl">
 <nav id="slide-menu">
     <a id="slide-menu-btn" class="glyphicon glyphicon-align-justify"></a>
     <ul>
@@ -93,12 +97,12 @@
     <form id="contact-form" ng-submit="submitContact()">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <input id="name-input" type="text" name="name" value="" placeholder="Your name" required ng-model="formData.name" class="text">
-        <input id="email-input" name="email" value="" placeholder="Your email" type="email" ng-model="formData.email" class="text">
+        <input id="email-input" name="email" value="" placeholder="Your email" required type="email" ng-model="formData.email" class="text">
         <textarea name="message" rows="10" placeholder="Put your message here" required ng-model="formData.message" class="message"></textarea>
         <input id="submit" type="submit" value="Submit">
         {{--@{{ formData.name }}--}}
         {{--@{{ formData.email }}--}}
-        {{--@{{ formData.msg }}--}}
+        {{--@{{ formData.message }}--}}
     </form>
     <p id="copy">
         © 2014 TANGLONG DESIGN
@@ -106,21 +110,3 @@
 </section>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
