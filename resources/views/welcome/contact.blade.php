@@ -4,13 +4,13 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Contact TangLong</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/headermenu.css" />
-    <link rel="stylesheet" type="text/css" href="css/contact.css" />
-    <script src="js/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/headermenu.css" />
+    <link rel="stylesheet" type="text/css" href="/css/contact.css" />
+    <script src="/js/jquery-2.1.1.min.js"></script>
 
-    {!! Html::script('js/angular.min.js') !!}
-    {!! Html::script('js/works.js') !!}
+    {!! Html::script('/js/angular.min.js') !!}
+    {!! Html::script('/js/works.js') !!}
 
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script>
@@ -21,7 +21,7 @@
             });
         });
 
-        var emailUrl = '{{url("/contact/email/")}}';
+        var emailUrl = '{{url("contact/email/")}}';
         function initialize() {
             var mapOptions = {
                 zoom: 16,
@@ -29,7 +29,7 @@
             }
             var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-            var image = 'img/pin.png';
+            var image = '/img/pin.png';
             var myLatLng = new google.maps.LatLng(1.355261,103.8798769);
             var beachMarker = new google.maps.Marker({
                 position: myLatLng,
@@ -46,25 +46,49 @@
     <a id="slide-menu-btn" class="glyphicon glyphicon-align-justify"></a>
     <ul>
         <li><a href="{{ url('/') }}">HOME</a></li>
-        <li><a href="{{ url('/about') }}">ABOUT</a></li>
-        <li><a href="{{ url('/services') }}">SERVICE</a></li>
-        <li><a href="{{ url('/promotions') }}">PROMOTION</a></li>
-        <li><a href="{{ url('/works') }}">PORTFOLIO</a></li>
-        <li><a href="{{ url('/contact') }}">CONTACT</a></li>
+        <li><a href="{{ url('about') }}">ABOUT</a></li>
+        <li><a href="{{ url('services') }}">SERVICE</a></li>
+        <li><a href="{{ url('promotions') }}">PROMOTION</a></li>
+        <li><a href="{{ url('works') }}">PORTFOLIO</a></li>
+        <li><a href="{{ url('contact') }}">CONTACT</a></li>
     </ul>
 </nav>
-<section class="header-bar">
+{{--<section class="header-bar">--}}
+    {{--<div id="logo">TANGLONG LOGO</div>--}}
+    {{--<nav id="menu">--}}
+        {{--<a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>--}}
+        {{--<a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>--}}
+        {{--<a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>--}}
+        {{--<a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>--}}
+        {{--<a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>--}}
+        {{--<a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>--}}
+    {{--</nav>--}}
+    {{--<nav id="auth-menu">--}}
+        {{--<a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>--}}
+    {{--</nav>--}}
+{{--</section>--}}
+<section id="header-bar">
     <div id="logo">TANGLONG LOGO</div>
     <nav id="menu">
-        <a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
-        <a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
-        <a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
-        <a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
-        <a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
-        <a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
+        <a href="{{LL::getLocalizedURL(null, '/') }}" class="home-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.HOME')}}">{{trans('messages.HOME')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'about') }}" class="about-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.ABOUT')}}">{{trans('messages.ABOUT')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'services') }}" class="service-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.SERVICE')}}">{{trans('messages.SERVICE')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'promotions') }}" class="promo-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.PROMOTION')}}">{{trans('messages.PROMOTION')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'works') }}" class="portfolio-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.PORTFOLIO')}}">{{trans('messages.PORTFOLIO')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'contact') }}" class="contact-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.CONTACT')}}">{{trans('messages.CONTACT')}}</span></a>
     </nav>
     <nav id="auth-menu">
-        <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>
+        @if(LL::getCurrentLocale() == 'en')
+            <a href="{{LL::getLocalizedURL('zh') }}" class="login-btn menu-btn"><span class="hover-anim" data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+        @elseif(LL::getCurrentLocale() == 'zh')
+            <a href="{{LL::getLocalizedURL('en') }}" class="login-btn menu-btn"><span class="hover-anim" data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+        @endif
     </nav>
 </section>
 

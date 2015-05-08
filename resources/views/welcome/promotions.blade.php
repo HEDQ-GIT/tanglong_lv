@@ -5,16 +5,16 @@
     <title>TangLong Promotions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-    {!! Html::style("css/bootstrap.min.css") !!}
+    {!! Html::style("/css/bootstrap.min.css") !!}
     <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="/css/swiper.min.css">
-    {!! Html::style("css/works.css") !!}
-    {!! Html::style("css/promotions.css") !!}
-    <link rel="stylesheet" type="text/css" href="css/headermenu.css" />
-    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    {!! Html::style("/css/works.css") !!}
+    {!! Html::style("/css/promotions.css") !!}
+    <link rel="stylesheet" type="text/css" href="/css/headermenu.css" />
+    <link rel="stylesheet" type="text/css" href="/css/contact.css" />
 
 
 
@@ -83,18 +83,42 @@
     </ul>
 </nav>
 
-<section class="header-bar">
+{{--<section class="header-bar">--}}
+    {{--<div id="logo">TANGLONG LOGO</div>--}}
+    {{--<nav id="menu">--}}
+        {{--<a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>--}}
+        {{--<a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>--}}
+        {{--<a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>--}}
+        {{--<a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>--}}
+        {{--<a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>--}}
+        {{--<a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>--}}
+    {{--</nav>--}}
+    {{--<nav id="auth-menu">--}}
+        {{--<a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>--}}
+    {{--</nav>--}}
+{{--</section>--}}
+<section id="header-bar">
     <div id="logo">TANGLONG LOGO</div>
     <nav id="menu">
-        <a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
-        <a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
-        <a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
-        <a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
-        <a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
-        <a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
+        <a href="{{LL::getLocalizedURL(null, '/') }}" class="home-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.HOME')}}">{{trans('messages.HOME')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'about') }}" class="about-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.ABOUT')}}">{{trans('messages.ABOUT')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'services') }}" class="service-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.SERVICE')}}">{{trans('messages.SERVICE')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'promotions') }}" class="promo-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.PROMOTION')}}">{{trans('messages.PROMOTION')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'works') }}" class="portfolio-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.PORTFOLIO')}}">{{trans('messages.PORTFOLIO')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'contact') }}" class="contact-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.CONTACT')}}">{{trans('messages.CONTACT')}}</span></a>
     </nav>
     <nav id="auth-menu">
-        <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>
+        @if(LL::getCurrentLocale() == 'en')
+            <a href="{{LL::getLocalizedURL('zh') }}" class="login-btn menu-btn"><span class="hover-anim" data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+        @elseif(LL::getCurrentLocale() == 'zh')
+            <a href="{{LL::getLocalizedURL('en') }}" class="login-btn menu-btn"><span class="hover-anim" data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+        @endif
     </nav>
 </section>
 
@@ -104,7 +128,7 @@
     <section id="summary">
         <h1>SUPER PROMOTION</h1>
     </section>
-    <img class="pulp" src="img/heart.gif" height="128" width="128">
+    <img class="pulp" src="/img/heart.gif" height="128" width="128">
 
     {{--<div class="swiper-wrapper">--}}
         {{--<div class="swiper-slide" style="background: url(/img/pmt1.jpg) no-repeat;background-position: center;">--}}

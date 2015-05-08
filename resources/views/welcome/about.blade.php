@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>About TangLong</title>
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/headermenu.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <link rel="stylesheet" type="text/css" href="/css/headermenu.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/about.css"/>
 
-    <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/responsiveslides.min.js"></script>
     <script type="text/javascript">
         $(function () {
             $(".rslides").responsiveSlides({
                 speed: 800
             });
 
-            $('.pager-link').on('click', function(e){
+            $('.pager-link').on('click', function (e) {
                 $('.pager-link').removeClass('active');
                 $(this).addClass('active');
                 $('.visible').removeClass('visible');
@@ -26,7 +26,7 @@
                 e.preventDefault();
             });
 
-            $('#slide-menu-btn').click(function(){
+            $('#slide-menu-btn').click(function () {
                 $('body').toggleClass('menu-active');
             });
         });
@@ -45,34 +45,60 @@
     </ul>
 </nav>
 
-<section class="header-bar">
+{{--<section id="header-bar">--}}
+{{--<div id="logo">TANGLONG LOGO</div>--}}
+{{--<nav id="menu">--}}
+{{--<a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>--}}
+{{--<a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>--}}
+{{--<a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>--}}
+{{--<a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>--}}
+{{--<a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>--}}
+{{--<a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>--}}
+{{--</nav>--}}
+{{--<nav id="auth-menu">--}}
+{{--<a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>--}}
+{{--</nav>--}}
+{{--</section>--}}
+<section id="header-bar">
     <div id="logo">TANGLONG LOGO</div>
     <nav id="menu">
-        <a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
-        <a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
-        <a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
-        <a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
-        <a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
-        <a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
+        <a href="{{LL::getLocalizedURL(null, '/') }}" class="home-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.HOME')}}">{{trans('messages.HOME')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'about') }}" class="about-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.ABOUT')}}">{{trans('messages.ABOUT')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'services') }}" class="service-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.SERVICE')}}">{{trans('messages.SERVICE')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'promotions') }}" class="promo-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.PROMOTION')}}">{{trans('messages.PROMOTION')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'works') }}" class="portfolio-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.PORTFOLIO')}}">{{trans('messages.PORTFOLIO')}}</span></a>
+        <a href="{{LL::getLocalizedURL(null, 'contact') }}" class="contact-btn menu-btn">
+            <span class="hover-anim" data-hover="{{trans('messages.CONTACT')}}">{{trans('messages.CONTACT')}}</span></a>
     </nav>
     <nav id="auth-menu">
-        <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>
+        @if(LL::getCurrentLocale() == 'en')
+            <a href="{{LL::getLocalizedURL('zh') }}" class="login-btn menu-btn"><span class="hover-anim"
+                                                                                      data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+        @elseif(LL::getCurrentLocale() == 'zh')
+            <a href="{{LL::getLocalizedURL('en') }}" class="login-btn menu-btn"><span class="hover-anim"
+                                                                                      data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+        @endif
     </nav>
 </section>
 
 <ul id="slider" class="rslides">
     <li>
-        <div class="image" style="background-image: url('img/slider1_bg.jpg');"/>
+        <div class="image" style="background-image: url('/img/slider1_bg.jpg');"/>
         <h1>Design Folk<span>Advertising Design Studio</span></h1>
         <h6>We dream, explore, create and craft progressive visual experiences</h6>
     </li>
     <li>
-        <div class="image" style="background-image: url('img/slider2_bg.jpg');"/>
+        <div class="image" style="background-image: url('/img/slider2_bg.jpg');"/>
         <h1>Design Folk<span>Advertising Design Studio</span></h1>
         <h6>We dream, explore, create and craft progressive visual experiences</h6>
     </li>
     <li>
-        <div class="image" style="background-image: url('img/slider3_bg.jpg');"/>
+        <div class="image" style="background-image: url('/img/slider3_bg.jpg');"/>
         <h1>Design Folk<span>Advertising Design Studio</span></h1>
         <h6>We dream, explore, create and craft progressive visual experiences</h6>
     </li>
@@ -80,49 +106,77 @@
 
 <section id="desc" class="wp2 animated fadeInDown">
     <h1 class="title">Company profile</h1>
+
     <p class="description">
-        Web designing companies Singapore come up with impressive solutions and our company has gained eminence with its up to the mark services and products. We are striving to gain popularity based on the web related products and solutions and tend to become one of the most reputed companies in the country or may be beyond! Our web development companies in Singapore has gained lately quite a lot of popularity as a web design and development company.
+        Web designing companies Singapore come up with impressive solutions and our company has gained eminence with its
+        up to the mark services and products. We are striving to gain popularity based on the web related products and
+        solutions and tend to become one of the most reputed companies in the country or may be beyond! Our web
+        development companies in Singapore has gained lately quite a lot of popularity as a web design and development
+        company.
         <br/><br/>
-        Ekoo Lab provides a myriad of interactive media services to suit your needs. These include web & mobile design, development & hosting with capabilities that includes flash micro-sites, professional Search Engine Optimization (SEO) services, custom web applications, mobile applications, online marketing campaigns (incorporating e-mail and mobile marketing) and Content Management Systems (CMS).
-        At Ekoo Lab, web designs are built with PHP, CSS, Javascript, Actionscript and AJAX programming. We also provide static designs for brochures and yearbooks as well as printing services for all your print collaterals. Most importantly, Ekoo Lab is committed towards providing professional and affordable web designs and print media that are tailor-made to suit your businesses’ needs.
+        Ekoo Lab provides a myriad of interactive media services to suit your needs. These include web & mobile design,
+        development & hosting with capabilities that includes flash micro-sites, professional Search Engine Optimization
+        (SEO) services, custom web applications, mobile applications, online marketing campaigns (incorporating e-mail
+        and mobile marketing) and Content Management Systems (CMS).
+        At Ekoo Lab, web designs are built with PHP, CSS, Javascript, Actionscript and AJAX programming. We also provide
+        static designs for brochures and yearbooks as well as printing services for all your print collaterals. Most
+        importantly, Ekoo Lab is committed towards providing professional and affordable web designs and print media
+        that are tailor-made to suit your businesses’ needs.
         <br/><br/>
-        Ekoo Lab provides a myriad of interactive media services to suit your needs. These include web & mobile design, development & hosting with capabilities that includes flash micro-sites, professional Search Engine Optimization (SEO) services, custom web applications, mobile applications, online marketing campaigns (incorporating e-mail and mobile marketing) and Content Management Systems (CMS).
-        At Ekoo Lab, web designs are built with PHP, CSS, Javascript, Actionscript and AJAX programming. We also provide static designs for brochures and yearbooks as well as printing services for all your print collaterals. Most importantly, Ekoo Lab is committed towards providing professional and affordable web designs and print media that are tailor-made to suit your businesses’ needs.
+        Ekoo Lab provides a myriad of interactive media services to suit your needs. These include web & mobile design,
+        development & hosting with capabilities that includes flash micro-sites, professional Search Engine Optimization
+        (SEO) services, custom web applications, mobile applications, online marketing campaigns (incorporating e-mail
+        and mobile marketing) and Content Management Systems (CMS).
+        At Ekoo Lab, web designs are built with PHP, CSS, Javascript, Actionscript and AJAX programming. We also provide
+        static designs for brochures and yearbooks as well as printing services for all your print collaterals. Most
+        importantly, Ekoo Lab is committed towards providing professional and affordable web designs and print media
+        that are tailor-made to suit your businesses’ needs.
     </p>
 </section>
 
 <section class="capabilities section">
     <div class="wrapper">
         <h1>Our Capabilities</h1>
+
         <div class="whyslidesection">
             <div class="wrapper" id="bx-pager">
                 <a id="0" href="" class="active pager-link">
                     <div>
-                        <img class="capicon" src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-strategy.png">
+                        <img class="capicon"
+                             src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-strategy.png">
+
                         <h1>Strategy</h1>
                     </div>
                 </a>
                 <a id="1" href="" class="pager-link">
                     <div>
-                        <img class="capicon" src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-identity.png">
+                        <img class="capicon"
+                             src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-identity.png">
+
                         <h1>Identity</h1>
                     </div>
                 </a>
-                <a id="2"href="" class="pager-link">
+                <a id="2" href="" class="pager-link">
                     <div>
-                        <img class="capicon" src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-print.png">
+                        <img class="capicon"
+                             src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-print.png">
+
                         <h1>Print</h1>
                     </div>
                 </a>
                 <a id="3" href="" class="pager-link">
                     <div>
-                        <img class="capicon" src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-digital.png">
+                        <img class="capicon"
+                             src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-digital.png">
+
                         <h1>Digital</h1>
                     </div>
                 </a>
                 <a id="4" href="" class="pager-link">
                     <div>
-                        <img class="capicon" src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-packaging.png">
+                        <img class="capicon"
+                             src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-packaging.png">
+
                         <h1>Packaging</h1>
                     </div>
                 </a>
@@ -132,19 +186,34 @@
                     <div class="bx-viewport">
                         <ul class="bxslider">
                             <li id="bx_0" class="visible">
-                                <div class="text">Strategy determines the direction for everything you do. Through research and discovery, we’ll help you get a clear picture of who you are and what you’re trying to achieve. And then we can find your unique voice.</div>
+                                <div class="text">Strategy determines the direction for everything you do. Through
+                                    research and discovery, we’ll help you get a clear picture of who you are and what
+                                    you’re trying to achieve. And then we can find your unique voice.
+                                </div>
                             </li>
                             <li id="bx_1">
-                                <div class="text">Establishing a strong visual brand identity is essential to communicating who you are. We’ll help you through the process from logo creation or rebranding, to establishing standards for consistency.</div>
+                                <div class="text">Establishing a strong visual brand identity is essential to
+                                    communicating who you are. We’ll help you through the process from logo creation or
+                                    rebranding, to establishing standards for consistency.
+                                </div>
                             </li>
                             <li id="bx_2">
-                                <div class="text">Everyone needs something they can hold: stationery, brochures, postcards, annual reports, etc. We’ll help you create pieces that make a lasting impression and reinforce the story you’re telling.</div>
+                                <div class="text">Everyone needs something they can hold: stationery, brochures,
+                                    postcards, annual reports, etc. We’ll help you create pieces that make a lasting
+                                    impression and reinforce the story you’re telling.
+                                </div>
                             </li>
                             <li id="bx_3">
-                                <div class="text">To stay in the game these days, an online presence is key. We’ll help you communicate your message in the world of websites, e-newsletters, apps, social media, and whatever they think of next.</div>
+                                <div class="text">To stay in the game these days, an online presence is key. We’ll help
+                                    you communicate your message in the world of websites, e-newsletters, apps, social
+                                    media, and whatever they think of next.
+                                </div>
                             </li>
                             <li id="bx_4">
-                                <div class="text">The quality, design and functionality of a package can make or break a product. If your brand centers on a packed good, we’ll work together to create packaging that is on point with your strategy and visual branding.</div>
+                                <div class="text">The quality, design and functionality of a package can make or break a
+                                    product. If your brand centers on a packed good, we’ll work together to create
+                                    packaging that is on point with your strategy and visual branding.
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -170,7 +239,9 @@
                 </div>
                 <div class="svc-desc">
                     <h4 class="purple">A Personal Experience</h4>
-                    <p>Visit our office and meet our design consultants Account Executives and Developers. All in-house, we don’t outsource! Direct Communication is important. </p>
+
+                    <p>Visit our office and meet our design consultants Account Executives and Developers. All in-house,
+                        we don’t outsource! Direct Communication is important. </p>
                 </div>
             </div>
         </li>
@@ -181,7 +252,9 @@
                 </div>
                 <div class="svc-desc">
                     <h4 class="green">A Professional Experience</h4>
-                    <p>We treat you how we would like to be treated. We deliver effective business solutions that emphasise simplicity – no complicated technical jargon! ​​</p>
+
+                    <p>We treat you how we would like to be treated. We deliver effective business solutions that
+                        emphasise simplicity – no complicated technical jargon! ​​</p>
                 </div>
             </div>
         </li>
@@ -192,7 +265,10 @@
                 </div>
                 <div class="svc-desc">
                     <h4 class="blue">An Affordable Experience</h4>
-                    <p>We never surprise you with hidden fees. Our fixed price quotes mean what we first quote is what you pay. Our prices are a true reflection of the finishing result – the highest quality work at the lowest possible prices.​</p>
+
+                    <p>We never surprise you with hidden fees. Our fixed price quotes mean what we first quote is what
+                        you pay. Our prices are a true reflection of the finishing result – the highest quality work at
+                        the lowest possible prices.​</p>
                 </div>
             </div>
         </li>
@@ -203,7 +279,9 @@
                 </div>
                 <div class="svc-desc">
                     <h4 class="yellow">A Personal Experience</h4>
-                    <p>Visit our office and meet our design consultants Account Executives and Developers. All in-house, we don’t outsource! Direct Communication is important.</p>
+
+                    <p>Visit our office and meet our design consultants Account Executives and Developers. All in-house,
+                        we don’t outsource! Direct Communication is important.</p>
                 </div>
             </div>
         </li>
@@ -214,7 +292,9 @@
                 </div>
                 <div class="svc-desc">
                     <h4 class="pink">A Professional Experience</h4>
-                    <p>We treat you how we would like to be treated. We deliver effective business solutions that emphasise simplicity – no complicated technical jargon!​​</p>
+
+                    <p>We treat you how we would like to be treated. We deliver effective business solutions that
+                        emphasise simplicity – no complicated technical jargon!​​</p>
                 </div>
             </div>
         </li>
@@ -225,7 +305,9 @@
                 </div>
                 <div class="svc-desc">
                     <h4 class="red">An Affordable Experience</h4>
-                    <p>We never surprise you with hidden fees. Our fixed price quotes mean what we first quote is what you pay.</p>
+
+                    <p>We never surprise you with hidden fees. Our fixed price quotes mean what we first quote is what
+                        you pay.</p>
                 </div>
             </div>
         </li>
@@ -234,6 +316,6 @@
 <section id="copy">
     © 2014 TANGLONG DESIGN
 </section>
-<script src="js/waypoints.min.js"></script>
+<script src="/js/waypoints.min.js"></script>
 </body>
 </html>

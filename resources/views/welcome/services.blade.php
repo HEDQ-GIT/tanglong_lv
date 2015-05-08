@@ -6,13 +6,13 @@
 <title>TangLong Services</title>
 <link rel="icon" type="image/png" href="../favicon.ico">
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="css/headermenu.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/service.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/headermenu.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/service.css">
 
-<script src="js/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/modernizr.js"></script>
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/js/modernizr.js"></script>
 
 <script>
     $(function () {
@@ -38,21 +38,45 @@
 
 <section id="coming">
     <section class="banner">
-        <img src="img/team3.jpg" alt="" class="banner-cover" style="height: 650px; width: 1281.94444444444px; margin: 0px 0px 0px -1.97222222222229px; transform: translateY(132.6px);">
+        <img src="/img/team3.jpg" alt="" class="banner-cover" style="height: 650px; width: 1281.94444444444px; margin: 0px 0px 0px -1.97222222222229px; transform: translateY(132.6px);">
         <i class="arrow-scroll-white"></i>
 
+        {{--<section id="header-bar">--}}
+            {{--<div id="logo">TANGLONG LOGO</div>--}}
+            {{--<nav id="menu">--}}
+                {{--<a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>--}}
+                {{--<a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>--}}
+                {{--<a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>--}}
+                {{--<a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>--}}
+                {{--<a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>--}}
+                {{--<a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>--}}
+            {{--</nav>--}}
+            {{--<nav id="auth-menu">--}}
+                {{--<a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>--}}
+            {{--</nav>--}}
+        {{--</section>--}}
         <section id="header-bar">
             <div id="logo">TANGLONG LOGO</div>
             <nav id="menu">
-                <a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
-                <a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
-                <a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
-                <a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
-                <a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
-                <a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
+                <a href="{{LL::getLocalizedURL(null, '/') }}" class="home-btn menu-btn">
+                    <span class="hover-anim" data-hover="{{trans('messages.HOME')}}">{{trans('messages.HOME')}}</span></a>
+                <a href="{{LL::getLocalizedURL(null, 'about') }}" class="about-btn menu-btn">
+                    <span class="hover-anim" data-hover="{{trans('messages.ABOUT')}}">{{trans('messages.ABOUT')}}</span></a>
+                <a href="{{LL::getLocalizedURL(null, 'services') }}" class="service-btn menu-btn">
+                    <span class="hover-anim" data-hover="{{trans('messages.SERVICE')}}">{{trans('messages.SERVICE')}}</span></a>
+                <a href="{{LL::getLocalizedURL(null, 'promotions') }}" class="promo-btn menu-btn">
+                    <span class="hover-anim" data-hover="{{trans('messages.PROMOTION')}}">{{trans('messages.PROMOTION')}}</span></a>
+                <a href="{{LL::getLocalizedURL(null, 'works') }}" class="portfolio-btn menu-btn">
+                    <span class="hover-anim" data-hover="{{trans('messages.PORTFOLIO')}}">{{trans('messages.PORTFOLIO')}}</span></a>
+                <a href="{{LL::getLocalizedURL(null, 'contact') }}" class="contact-btn menu-btn">
+                    <span class="hover-anim" data-hover="{{trans('messages.CONTACT')}}">{{trans('messages.CONTACT')}}</span></a>
             </nav>
             <nav id="auth-menu">
-                <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>
+                @if(LL::getCurrentLocale() == 'en')
+                    <a href="{{LL::getLocalizedURL('zh') }}" class="login-btn menu-btn"><span class="hover-anim" data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+                @elseif(LL::getCurrentLocale() == 'zh')
+                    <a href="{{LL::getLocalizedURL('en') }}" class="login-btn menu-btn"><span class="hover-anim" data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+                @endif
             </nav>
         </section>
 
@@ -68,22 +92,22 @@
             <h1 class="title">A tool for collectors of any kind !</h1>
             <ul>
                 <li class="first">
-                    <figure><img src="img/punchline-1.svg" alt=""></figure>
+                    <figure><img src="/img/punchline-1.svg" alt=""></figure>
                     <h3>A complete tool</h3>
                     <p>We are supplying you a <strong>complete</strong> tool that will allow you to bring your collection to another level.</p>
                 </li>
                 <li>
-                    <figure><img src="img/punchline-2.svg" alt=""></figure>
+                    <figure><img src="/img/punchline-2.svg" alt=""></figure>
                     <h3>Universe diversity</h3>
                     <p>Find and explore a bunch of collectibles through <strong>multiple</strong> and <strong>various</strong> universes of collection.</p>
                 </li>
                 <li>
-                    <figure><img src="img/punchline-3.svg" alt=""></figure>
+                    <figure><img src="/img/punchline-3.svg" alt=""></figure>
                     <h3>Easy-to-use</h3>
                     <p>Thanks to its <strong>easy-to-use</strong> and <strong>clean</strong> interface, it has never been so easy to handle your collections.</p>
                 </li>
                 <li class="last">
-                    <figure><img src="img/punchline-4.svg" alt=""></figure>
+                    <figure><img src="/img/punchline-4.svg" alt=""></figure>
                     <h3>Quickly handy</h3>
                     <p>No instructions needed... Thanks to its carefully thought ergonomy, everybody will be able to take advantage of it.</p>
                 </li>
@@ -94,7 +118,7 @@
     <section class="insert expose" id="anchor-2" data-to-animate="">
         <div class="center">
             <figure>
-                <img src="img/expose.svg" alt="">
+                <img src="/img/expose.svg" alt="">
             </figure>
             <div class="wrap">
                 <article class="text">
@@ -110,7 +134,7 @@
     <section class="insert universe" data-to-animate="">
         <div class="center">
             <figure>
-                <img src="img/universe.svg" alt="">
+                <img src="/img/universe.svg" alt="">
             </figure>
             <div class="wrap">
                 <article class="text">
@@ -126,7 +150,7 @@
     <section class="insert exploration" data-to-animate="">
         <div class="center">
             <figure>
-                <img src="img/exploration.svg" alt="">
+                <img src="/img/exploration.svg" alt="">
             </figure>
             <div class="wrap">
                 <article class="text">
@@ -142,7 +166,7 @@
     <section class="insert sharing" data-to-animate="">
         <div class="center">
             <figure>
-                <img src="img/sharing.svg" alt="">
+                <img src="/img/sharing.svg" alt="">
             </figure>
             <div class="wrap">
                 <article class="text">
@@ -157,7 +181,7 @@
     <section class="insert support" id="anchor-4" data-to-animate="">
         <div class="center">
             <figure>
-                <img src="img/support.svg" alt="">
+                <img src="/img/support.svg" alt="">
             </figure>
             <div class="wrap">
                 <article class="text">
@@ -187,8 +211,8 @@
 </section>
 
 {{--<script src="js/jquery.js"></script>--}}
-<script src="js/video.js"></script>
-<script src="js/easing.js"></script>
-<script src="js/coming.js"></script>
+<script src="/js/video.js"></script>
+<script src="/js/easing.js"></script>
+<script src="/js/coming.js"></script>
 
 </body></html>

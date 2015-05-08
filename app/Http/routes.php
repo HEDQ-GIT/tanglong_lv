@@ -15,31 +15,33 @@
 
 //Route::get('home', 'WelcomeController@index');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+Route::group(['prefix' => LL::setLocale()], function () {
 
-/**
- * DQ-
- */
-get('/', 'WelcomeController@index');
+    Route::controllers([
+        'auth' => 'Auth\AuthController',
+        'password' => 'Auth\PasswordController',
+    ]);
 
-get('/works', 'WelcomeController@works');
-post('/works/getWorks/{id}', 'WelcomeController@getWorks');
-post('/works/getWorkDetails', 'WelcomeController@getWorkDetails');
+    /**
+     * DQ-
+     */
+    get('/', 'WelcomeController@index');
 
-get('/services', 'WelcomeController@services');
-get('/about', 'WelcomeController@about');
+    get('works', 'WelcomeController@works');
+    post('works/getWorks/{id}', 'WelcomeController@getWorks');
+    post('works/getWorkDetails', 'WelcomeController@getWorkDetails');
 
-get('/promotions', 'WelcomeController@promotions');
+    get('services', 'WelcomeController@services');
+    get('about', 'WelcomeController@about');
 
-get('/contact', 'WelcomeController@contact');
-post('/contact/email/', 'WelcomeController@email');
-get('/contact/email/', 'WelcomeController@email');
+    get('promotions', 'WelcomeController@promotions');
 
-
-post('/changeLang', 'WelcomeController@changeLang');
-
+    get('contact', 'WelcomeController@contact');
+    post('contact/email/', 'WelcomeController@email');
+    get('contact/email/', 'WelcomeController@email');
 
 
+    get('play', 'WelcomeController@play');
+
+
+});

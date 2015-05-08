@@ -16,7 +16,7 @@ app.controller('MainCtrl', function ($scope, $http) {
         }).success(function (data, status) {
             var result = new Array();
             for (i in data) {
-                result.push('img/'+ data[i]);
+                result.push('/img/'+ data[i]);
             }
             $scope.imgUrls = result;
         }).error(function (data, status) {

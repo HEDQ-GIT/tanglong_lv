@@ -140,6 +140,8 @@ return [
 		 */
 		'Illuminate\Html\HtmlServiceProvider',
 		'Frozennode\Administrator\AdministratorServiceProvider',
+		'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
+
 
 
 		/*
@@ -203,6 +205,7 @@ return [
 		 */
 		'Form'      => 'Illuminate\Html\FormFacade',
 		'Html'      => 'Illuminate\Html\HtmlFacade',
+		'LL'        => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization',
 
 	],
 

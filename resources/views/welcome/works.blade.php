@@ -8,7 +8,8 @@
     {!! Html::style("css/works.css") !!}
     {!! Html::style("css/magnific-popup.css") !!}
     {!! Html::style("css/lightbox.css") !!}
-    {!! Html::style("css/aboutcomy.css") !!}
+    {{--{!! Html::style("css/aboutcomy.css") !!}--}}
+    {!! Html::style("css/about.css") !!}
 
 @stop
 
@@ -18,8 +19,8 @@
     {!! Html::script('js/responsiveslides.min.js') !!}
 
     <script>
-        var worksUrl = "{{ URL('/works/getWorks') }}";
-        var workDetailUrl = "{{ URL('/works/getWorkDetails') }}";
+        var worksUrl = "{{ URL('works/getWorks') }}";
+        var workDetailUrl = "{{ URL('works/getWorkDetails') }}";
 
         $(function () {
             $(".rslides").responsiveSlides({
@@ -43,25 +44,49 @@
         </ul>
     </nav>
 
-    <section class="header-bar">
+    {{--<section class="header-bar">--}}
+        {{--<div id="logo">TANGLONG LOGO</div>--}}
+        {{--<nav id="menu">--}}
+            {{--<a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>--}}
+            {{--<a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>--}}
+            {{--<a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>--}}
+            {{--<a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>--}}
+            {{--<a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>--}}
+            {{--<a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>--}}
+        {{--</nav>--}}
+        {{--<nav id="auth-menu">--}}
+            {{--<a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>--}}
+        {{--</nav>--}}
+    {{--</section>--}}
+    <section id="header-bar">
         <div id="logo">TANGLONG LOGO</div>
         <nav id="menu">
-            <a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>
-            <a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>
-            <a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>
-            <a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>
-            <a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>
-            <a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>
+            <a href="{{LL::getLocalizedURL(null, '/') }}" class="home-btn menu-btn">
+                <span class="hover-anim" data-hover="{{trans('messages.HOME')}}">{{trans('messages.HOME')}}</span></a>
+            <a href="{{LL::getLocalizedURL(null, 'about') }}" class="about-btn menu-btn">
+                <span class="hover-anim" data-hover="{{trans('messages.ABOUT')}}">{{trans('messages.ABOUT')}}</span></a>
+            <a href="{{LL::getLocalizedURL(null, 'services') }}" class="service-btn menu-btn">
+                <span class="hover-anim" data-hover="{{trans('messages.SERVICE')}}">{{trans('messages.SERVICE')}}</span></a>
+            <a href="{{LL::getLocalizedURL(null, 'promotions') }}" class="promo-btn menu-btn">
+                <span class="hover-anim" data-hover="{{trans('messages.PROMOTION')}}">{{trans('messages.PROMOTION')}}</span></a>
+            <a href="{{LL::getLocalizedURL(null, 'works') }}" class="portfolio-btn menu-btn">
+                <span class="hover-anim" data-hover="{{trans('messages.PORTFOLIO')}}">{{trans('messages.PORTFOLIO')}}</span></a>
+            <a href="{{LL::getLocalizedURL(null, 'contact') }}" class="contact-btn menu-btn">
+                <span class="hover-anim" data-hover="{{trans('messages.CONTACT')}}">{{trans('messages.CONTACT')}}</span></a>
         </nav>
         <nav id="auth-menu">
-            <a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>
+            @if(LL::getCurrentLocale() == 'en')
+                <a href="{{LL::getLocalizedURL('zh') }}" class="login-btn menu-btn"><span class="hover-anim" data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+            @elseif(LL::getCurrentLocale() == 'zh')
+                <a href="{{LL::getLocalizedURL('en') }}" class="login-btn menu-btn"><span class="hover-anim" data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+            @endif
         </nav>
     </section>
 
 
     <ul id="slider" class="rslides">
         <li>
-            <div class="image" style="background-image: url('img/demo-2-bg.jpg');"/>
+            <div class="image" style="background-image: url('/img/demo-2-bg.jpg');"/>
             <h1>Tang Long Design<span>Advertising Design Studio</span></h1>
             <h6>At Tang Long Design, each project is considered new and developed with passion!</h6>
         </li>
@@ -71,7 +96,7 @@
             {{--<h6>At Tang Long Design, each project is considered new and developed with passion!</h6>--}}
         {{--</li>--}}
         <li>
-            <div class="image" style="background-image: url('img/slider2_bg.jpg');"/>
+            <div class="image" style="background-image: url('/img/slider2_bg.jpg');"/>
             <h1>Tang Long Design<span>Advertising Design Studio</span></h1>
             <h6>At Tang Long Design, each project is considered new and developed with passion!</h6>
         </li>

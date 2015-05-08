@@ -23,13 +23,7 @@ html, body {
 	color: #333;
 	width:100%;
 	height: auto;
-	overflow-x: hidden; 
 	margin: 0;
-	left: 0;
-   	position:relative;
-	-moz-transition: all 300ms;
-	-webkit-transition: all 300ms;
-	transition: all 300ms;
 }
 
 h1 {
@@ -75,17 +69,11 @@ p{
 	color:#FF4981;
 }
 
-#header-bar {
-	width: 100%;
-	height: 50px;
-	position: absolute;
-	top: 0;
-	z-index: 999;
+.header-bar {
+	position: relative;
 }
 /* ------------------------------------------------------ Slide section start	 ------------------------------------------------------*/
 #slider {
-	z-index: 0;
-
 	list-style-type: none;
     position: relative;
 	list-style: none;

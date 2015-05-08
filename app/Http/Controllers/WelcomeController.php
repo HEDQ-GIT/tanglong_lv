@@ -147,9 +147,8 @@ class WelcomeController extends Controller
     }
 
 
-    public function changeLang()
+    public function play()
     {
-        $ret = App::setLocale('ch');
-        return $ret;
+        return view('welcome.play');
     }
 }
