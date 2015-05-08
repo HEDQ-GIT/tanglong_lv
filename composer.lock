@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "45d426500a259587bd50cfa24489c31c",
+    "hash": "b7ee08816d60ec1d1258a39df88f6832",
     "packages": [
         {
             "name": "ckeditor/ckeditor",

@@ -13,11 +13,11 @@ class PromotionsTableSeeder extends Seeder{
 
         foreach (range(1, 20) as $idx) {
             Promotion::create([
-                'title' => $faker->sentence,
+                'title' => $faker->name,
                 'expiredate' => $faker->date($format = 'Y-m-d', $max = 'now'),
-                'description' => $faker->paragraph(5),
-                'discount' => 60,
-                'imgUrl' => 'promotion_1.jpg'
+                'description' => $faker->paragraph(10),
+                'discount' => $faker->numberBetween($min = 10, $max = 90),
+                'imgUrl' => 'demo_1.gif'
             ]);
         }
     }

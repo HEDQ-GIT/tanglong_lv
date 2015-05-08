@@ -11,7 +11,8 @@
 	    "frozennode/administrator": "5.0.1",
 	    "fzaninotto/faker": "1.4.0",
 	    "mcamara/laravel-localization": "dev-master",
-	    "happyworm/jPlayer": "2.9.2"
+	    "happyworm/jPlayer": "2.9.2",
+		"vlucas/phpdotenv": "~1.1"
 
 	},
 	"require-dev": {

@@ -14,7 +14,6 @@
 $app = new Illuminate\Foundation\Application(
 	realpath(__DIR__.'/../')
 );
-
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces
@@ -40,6 +39,8 @@ $app->singleton(
 	'Illuminate\Contracts\Debug\ExceptionHandler',
 	'App\Exceptions\Handler'
 );
+
+require __DIR__.'/environment.php';
 
 /*
 |--------------------------------------------------------------------------

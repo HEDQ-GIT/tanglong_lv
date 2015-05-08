@@ -107,18 +107,18 @@ p{
 
 }
 
-.price{
-    font-family: 'Clicker Script', cursive;
-    display: block;
-    text-align: left;
-    font-weight:700;
-    font-size: 3.5em;
-    margin:0;
-}
+/*.price{*/
+    /*font-family: 'Clicker Script', cursive;*/
+    /*display: block;*/
+    /*text-align: left;*/
+    /*font-weight:700;*/
+    /*font-size: 3.5em;*/
+    /*margin:0;*/
+/*}*/
 
-.price > span{
-    font-size: 30%;
-}
+/*.price > span{*/
+    /*font-size: 30%;*/
+/*}*/
 
 .swiper-container {
     width: 100%;
@@ -134,31 +134,202 @@ p{
 
 
 
-img.pulp {
-    -webkit-animation: pulp 2s infinite ease normal none;
-    -o-animation: pulp 2s infinite ease normal none;
-    animation: pulp 2s infinite ease normal none;
+img.pulp-left {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+
+    -webkit-animation: pulp-left 2s infinite ease normal none;
+    -o-animation: pulp-left 2s infinite ease normal none;
+    animation: pulp-left 2s infinite ease normal none;
 }
-@-webkit-keyframes pulp {
+@-webkit-keyframes pulp-left {
     0% {
-        transform: scale(0.8);
+        transform: scale(0.8) rotate(12deg);
     }
     50% {
-        transform: scale(1.5);
+        transform: scale(1.5) rotate(12deg);
     }
     100% {
-        transform: scale(0.8);
+        transform: scale(0.8) rotate(12deg);
     }
 }
 
-@keyframes pulp {
+@keyframes pulp-left {
     0% {
-        transform: scale(0.8);
+        transform: scale(0.8) rotate(12deg);
     }
     50% {
-        transform: scale(1.5);
+        transform: scale(1.5) rotate(12deg);
     }
     100% {
-        transform: scale(0.8);
+        transform: scale(0.8) rotate(12deg);
     }
 }
+
+img.pulp-right {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+
+    -webkit-animation: pulp-right 2s infinite ease normal none;
+    -o-animation: pulp-right 2s infinite ease normal none;
+    animation: pulp-right 2s infinite ease normal none;
+}
+@-webkit-keyframes pulp-right {
+    0% {
+        transform: scale(0.8) rotate(-12deg);
+    }
+    50% {
+        transform: scale(1.5) rotate(-12deg);
+    }
+    100% {
+        transform: scale(0.8) rotate(-12deg);
+    }
+}
+
+@keyframes pulp-right {
+    0% {
+        transform: scale(0.8) rotate(-12deg);
+    }
+    50% {
+        transform: scale(1.5) rotate(-12deg);
+    }
+    100% {
+        transform: scale(0.8) rotate(-12deg);
+    }
+}
+
+
+
+.prom{
+    margin: 80px 0;
+}
+
+.prom-item{
+    text-align: center;
+    position: relative;
+}
+
+.left-content {
+    display: inline-block;
+    color: #FF9500;
+    font-weight: 700;
+}
+
+img.image{
+    max-width:400px;
+    max-height:400px;
+
+}
+
+p.head{
+    font-size: 2em;
+    margin: 0;
+    position: relative;
+    text-align: left !important;
+    font-weight: 600 !important;
+    color: #FF9500;
+}
+
+span.type, span.sign{
+    font-size:220%;
+}
+
+span.sign{
+    font-style: italic;
+    font-size: 200%;
+    color: #4CD964;
+}
+
+span.off{
+    font-size: 20%;
+    color: #ff4444;
+}
+
+
+.title{
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.value{
+    display:inline-block;
+    font-weight: 100;
+    position: absolute;
+    top: 120px;
+}
+
+.price{
+    font-family: 'Clicker Script', cursive;
+    display: block;
+    text-align: left;
+    font-weight:700;
+    font-size: 5.0em;
+    margin:0;
+}
+
+.price span.per{
+    font-size: 40%;
+}
+
+.price span.off{
+    position: absolute;
+    font-size: 24%;
+    left: 100px;
+    top: 25px;
+}
+
+.price span.text{
+    font-family:'Lato', Calibri, Arial, sans-serif;
+    margin-left: 10px;
+    color: #333;
+    font-style: italic;
+    font-size: 80%;
+    font-weight: 300;
+}
+
+.right-content{
+    display: inline-block;
+    max-width: 400px;
+    text-align: justify;
+    margin-top: 260px;
+    vertical-align: top;
+    margin-left: 80px;
+}
+
+.description {
+    text-align: justify;
+    max-width: 400px;
+    vertical-align: top;
+}
+
+.exp-gp {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.exp-lbl {
+    padding: 4px;
+    display: inline;
+    color: white;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border: 1px solid #333;
+    background-color: #333;
+}
+
+.exp-val {
+    padding: 4px;
+    display: inline;
+    margin-left: -5px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border: 1px solid #333;
+}
+
+/*********************************** End Promotion ***********************************/
+
+
+
+

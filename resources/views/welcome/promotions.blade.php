@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="/css/swiper.min.css">
     {!! Html::style("/css/works.css") !!}
     {!! Html::style("/css/promotions.css") !!}
-    <link rel="stylesheet" type="text/css" href="/css/headermenu.css" />
-    <link rel="stylesheet" type="text/css" href="/css/contact.css" />
-
+    <link rel="stylesheet" type="text/css" href="/css/headermenu.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/contact.css"/>
 
 
     <!-- Demo styles -->
@@ -84,18 +83,18 @@
 </nav>
 
 {{--<section class="header-bar">--}}
-    {{--<div id="logo">TANGLONG LOGO</div>--}}
-    {{--<nav id="menu">--}}
-        {{--<a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>--}}
-        {{--<a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>--}}
-        {{--<a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>--}}
-        {{--<a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>--}}
-        {{--<a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>--}}
-        {{--<a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>--}}
-    {{--</nav>--}}
-    {{--<nav id="auth-menu">--}}
-        {{--<a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>--}}
-    {{--</nav>--}}
+{{--<div id="logo">TANGLONG LOGO</div>--}}
+{{--<nav id="menu">--}}
+{{--<a href="{{ url('/') }}" class="home-btn menu-btn"><span class="hover-anim" data-hover="HOME">HOME</span></a>--}}
+{{--<a href="{{ url('/about') }}" class="about-btn menu-btn"><span class="hover-anim" data-hover="ABOUT">ABOUT</span></a>--}}
+{{--<a href="{{ url('/services') }}" class="service-btn menu-btn"><span class="hover-anim" data-hover="SERVICE">Service</span></a>--}}
+{{--<a href="{{ url('/promotions') }}" class="promo-btn menu-btn"><span class="hover-anim" data-hover="PROMOTION">PROMOTION</span></a>--}}
+{{--<a href="{{ url('/works') }}" class="portfolio-btn menu-btn"><span class="hover-anim" data-hover="PORTFOLIO">PORTFOLIO</span></a>--}}
+{{--<a href="{{ url('/contact') }}" class="contact-btn menu-btn"><span class="hover-anim" data-hover="CONTACT">CONTACT</span></a>--}}
+{{--</nav>--}}
+{{--<nav id="auth-menu">--}}
+{{--<a href="#" class="login-btn menu-btn"><span class="hover-anim" data-hover="简体中文">简体中文&nbsp;</span></a>--}}
+{{--</nav>--}}
 {{--</section>--}}
 <section id="header-bar">
     <div id="logo">TANGLONG LOGO</div>
@@ -115,9 +114,11 @@
     </nav>
     <nav id="auth-menu">
         @if(LL::getCurrentLocale() == 'en')
-            <a href="{{LL::getLocalizedURL('zh') }}" class="login-btn menu-btn"><span class="hover-anim" data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+            <a href="{{LL::getLocalizedURL('zh') }}" class="login-btn menu-btn"><span class="hover-anim"
+                                                                                      data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
         @elseif(LL::getCurrentLocale() == 'zh')
-            <a href="{{LL::getLocalizedURL('en') }}" class="login-btn menu-btn"><span class="hover-anim" data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
+            <a href="{{LL::getLocalizedURL('en') }}" class="login-btn menu-btn"><span class="hover-anim"
+                                                                                      data-hover="{{trans('messages.LANG')}}">{{trans('messages.LANG')}}</span></a>
         @endif
     </nav>
 </section>
@@ -125,30 +126,30 @@
 <!-- Swiper -->
 <div class="swiper-promotion">
     {{--<h1>SUPER PROMOTION</h1>--}}
-    <section id="summary">
-        <h1>SUPER PROMOTION</h1>
-    </section>
-    <img class="pulp" src="/img/heart.gif" height="128" width="128">
+    {{--<section id="summary">--}}
+        {{--<h1>SUPER PROMOTION</h1>--}}
+    {{--</section>--}}
+    {{--<img class="pulp" src="/img/heart.gif" height="128" width="128">--}}
 
     {{--<div class="swiper-wrapper">--}}
-        {{--<div class="swiper-slide" style="background: url(/img/pmt1.jpg) no-repeat;background-position: center;">--}}
-            {{--<img src="img/pmt1.jpg" alt=""/>--}}
-        {{--</div>--}}
-        {{--<div class="swiper-slide" style="background-image: url(/img/pmt2.jpg)">--}}
-            {{--<img src="img/pmt2.jpg" alt=""/>--}}
-        {{--</div>--}}
-        {{--<div class="swiper-slide" style="background-image: url(/img/pmt3.jpg)">--}}
-            {{--<img src="img/pmt1.jpg" alt=""/>--}}
-        {{--</div>--}}
-        {{--<div class="swiper-slide" style="background-image: url(/img/pmt4.jpg)">--}}
-            {{--<img src="img/pmt2.jpg" alt=""/>--}}
-        {{--</div>--}}
-        {{--<div class="swiper-slide" style="background-image: url(/img/pmt5.jpg)">--}}
-            {{--<img src="img/pmt1.jpg" alt=""/>--}}
-        {{--</div>--}}
-        {{--<div class="swiper-slide" style="background-image: url(/img/pmt6.jpg)">--}}
-            {{--<img src="img/pmt2.jpg" alt=""/>--}}
-        {{--</div>--}}
+    {{--<div class="swiper-slide" style="background: url(/img/pmt1.jpg) no-repeat;background-position: center;">--}}
+    {{--<img src="img/pmt1.jpg" alt=""/>--}}
+    {{--</div>--}}
+    {{--<div class="swiper-slide" style="background-image: url(/img/pmt2.jpg)">--}}
+    {{--<img src="img/pmt2.jpg" alt=""/>--}}
+    {{--</div>--}}
+    {{--<div class="swiper-slide" style="background-image: url(/img/pmt3.jpg)">--}}
+    {{--<img src="img/pmt1.jpg" alt=""/>--}}
+    {{--</div>--}}
+    {{--<div class="swiper-slide" style="background-image: url(/img/pmt4.jpg)">--}}
+    {{--<img src="img/pmt2.jpg" alt=""/>--}}
+    {{--</div>--}}
+    {{--<div class="swiper-slide" style="background-image: url(/img/pmt5.jpg)">--}}
+    {{--<img src="img/pmt1.jpg" alt=""/>--}}
+    {{--</div>--}}
+    {{--<div class="swiper-slide" style="background-image: url(/img/pmt6.jpg)">--}}
+    {{--<img src="img/pmt2.jpg" alt=""/>--}}
+    {{--</div>--}}
 
     {{--</div>--}}
     <!-- Add Pagination -->
@@ -158,62 +159,77 @@
 <div class="container-fluid promo">
     @foreach($promotions as $key => $promotion)
         <div class="item row">
+
             @if ($key%2 == 0)
-                <img class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 prom-img"
-                     src="/img/upload/{{ $promotion->imgUrl }}" alt="...">
-                <div class="col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1 desc">
-                    @else
-                        <img class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-md-push-7 prom-img"
-                             src="/img/upload/{{ $promotion->imgUrl }}" alt="...">
-                        <div class="col-md-7 col-md-offset-1 col-sm-7 col-sm-offset-1 col-md-pull-4 desc">
-                            @endif
-
-                            <h1 class="title">{{ $promotion->title }}</h1>
-
-                            <p class="price red">{{ $promotion->discount }}<span>% OFF</span>
-                                <span>(Expire On: {{ date("F-d", strtotime($promotion->expiredate)) }})</span>
-                            </p>
-                            {{ $promotion->description }}
-                        </div>
+                <div class="col-md-4 col-md-offset-1 col-sm-5 col-md-push-5">
+            @else
+                <div class="col-md-4 col-md-offset-1 col-sm-5">
+            @endif
+                    <p class="head">{{ $promotion->title }}
+                        @if ($key%2 == 0)
+                            <img class="pulp-left" src="/img/heart.gif" height="80" width="80">
+                        @else
+                            <img class="pulp-right" src="/img/heart.gif" height="80" width="80">
+                        @endif
+                    </p>
+                    <img class="prom-img" src="/img/upload/{{ $promotion->imgUrl }}" alt="...">
                 </div>
-                @endforeach
+
+            @if ($key%2 == 0)
+                    <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 desc col-md-pull-5">
+            @else
+                    <div class="col-md-6 col-md-offset-1 col-sm-6 col-sm-offset-1 desc">
+            @endif
+
+                <p class="price red">{{ $promotion->discount }}<span class="per">%</span><span class="off">Off</span></p>
+                <p class="description">
+                {{ $promotion->description }}
+                </p>
+
+                <div class="exp-gp">
+                    <p class="exp-lbl">Exp.</p>
+                    <p class="exp-val">{{ date("d-F-y", strtotime($promotion->expiredate)) }}</p>
+                </div>
+            </div>
         </div>
-        <!-- Swiper JS -->
-        <script src="/js/swiper.min.js"></script>
+    @endforeach
+</div>
+<!-- Swiper JS -->
+<script src="/js/swiper.min.js"></script>
 
-        <!-- Initialize Swiper -->
-        <script>
-            //    var swiper = new Swiper('.swiper-promotion', {
-            //        pagination: '.swiper-pagination',
-            //        effect: 'coverflow',
-            //        grabCursor: true,
-            //        centeredSlides: true,
-            //        slidesPerView: 'auto',
-            //        autoplay: 1,
-            //        autoplayDisableOnInteraction: false,
-            //        loop : true,
-            //        slidesPerView : 'auto',
-            //        loopedSlides :6,
-            //        speed: 3000,
-            //        coverflow: {
-            //            rotate: 50,
-            //            stretch: 20,
-            //            depth: 100,
-            //            modifier: 1,
-            //            slideShadows : false
-            //        }
-            //    });
-            var swiper = new Swiper('.swiper-promotion', {
-                pagination: '.swiper-pagination',
-                paginationClickable: true,
-                autoplay: 1,
-                autoplayDisableOnInteraction: false,
-                loop: true,
-                slidesPerView: 'auto',
-                loopedSlides: 6,
-                speed: 3000
+<!-- Initialize Swiper -->
+<script>
+    //    var swiper = new Swiper('.swiper-promotion', {
+    //        pagination: '.swiper-pagination',
+    //        effect: 'coverflow',
+    //        grabCursor: true,
+    //        centeredSlides: true,
+    //        slidesPerView: 'auto',
+    //        autoplay: 1,
+    //        autoplayDisableOnInteraction: false,
+    //        loop : true,
+    //        slidesPerView : 'auto',
+    //        loopedSlides :6,
+    //        speed: 3000,
+    //        coverflow: {
+    //            rotate: 50,
+    //            stretch: 20,
+    //            depth: 100,
+    //            modifier: 1,
+    //            slideShadows : false
+    //        }
+    //    });
+    var swiper = new Swiper('.swiper-promotion', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 1,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        slidesPerView: 'auto',
+        loopedSlides: 6,
+        speed: 3000
 
-            });
-        </script>
+    });
+</script>
 </body>
 </html>
