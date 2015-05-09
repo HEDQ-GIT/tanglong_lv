@@ -194,6 +194,9 @@
         </div>
     @endforeach
 </div>
+                <section id="copy">
+                    © 2014 TANGLONG DESIGN
+                </section>
 <!-- Swiper JS -->
 <script src="/js/swiper.min.js"></script>
 

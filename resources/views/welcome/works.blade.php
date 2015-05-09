@@ -86,7 +86,7 @@
 
     <ul id="slider" class="rslides">
         <li>
-            <div class="image" style="background-image: url('/img/demo-2-bg.jpg');"/>
+            <div class="image" style="background: url('/img/slider_2.jpg') no-repeat center center;background-size: cover"/>
             <h1>Tang Long Design<span>Advertising Design Studio</span></h1>
             <h6>At Tang Long Design, each project is considered new and developed with passion!</h6>
         </li>
@@ -96,7 +96,7 @@
             {{--<h6>At Tang Long Design, each project is considered new and developed with passion!</h6>--}}
         {{--</li>--}}
         <li>
-            <div class="image" style="background-image: url('/img/slider2_bg.jpg');"/>
+            <div class="image" style="background: url('/img/slider3_bg.jpg') no-repeat center center fixed;"/>
             <h1>Tang Long Design<span>Advertising Design Studio</span></h1>
             <h6>At Tang Long Design, each project is considered new and developed with passion!</h6>
         </li>
@@ -109,19 +109,34 @@
                 <div class="col-md-12">
                     <ul class="nav nav-tabs nav-justified">
                         <li class="">
-                            <a class="filter filter-hover" ng-init="getImgUrl(0)" ng-click="getImgUrl(0)">All
-                                <span class="badge pull-right">80</span>
+                            <a class="filter filter-hover" ng-init="getImgUrl(0)" ng-click="getImgUrl(0)">Lightbox
+                                {{--<span class="badge pull-right">80</span>--}}
                             </a>
                         </li>
-                        <li class=""><a class="filter" ng-click="getImgUrl(1)">Website<span
-                                        class="badge pull-right">25</span></a></li>
-                        <li class=""><a class="filter" ng-click="getImgUrl(2)">Applications<span
-                                        class="badge pull-right">15</span></a></li>
-                        <li class=""><a class="filter" ng-click="getImgUrl(3)">Branding<span class="badge pull-right">15</span></a>
+                        <li class="">
+                            <a class="filter" ng-click="getImgUrl(1)">LED
+                                {{--<span class="badge pull-right">25</span>--}}
+                            </a>
                         </li>
-                        <li class=""><a class="filter" ng-click="getImgUrl(4)">Animation<span class="badge pull-right">13</span></a>
+                        <li class="">
+                            <a class="filter" ng-click="getImgUrl(2)">3D Wording
+                                {{--<span class="badge pull-right">15</span>--}}
+                            </a>
                         </li>
-                        <li class=""><a class="filter" ng-click="getImgUrl(5)">Marketing<span class="badge pull-right">12</span></a>
+                        <li class="">
+                            <a class="filter" ng-click="getImgUrl(3)">Flashing
+                                {{--<span class="badge pull-right">15</span>--}}
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="filter" ng-click="getImgUrl(4)">Banner & Namecard
+                                {{--<span class="badge pull-right">13</span>--}}
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="filter" ng-click="getImgUrl(5)">Menu & Flyer
+                                {{--<span class="badge pull-right">12</span>--}}
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -135,10 +150,10 @@
             <div class="row grid swipe-down">
                 <div class="col-sm-6 col-md-3 content-col" ng-repeat="imgUrl in imgUrls">
                     <div class="thumbnail">
-                        <a href="javascript:void(0);" ng-click="getWorkDetail(1)" class="work-img">
+                        <a href="javascript:void(0);" ng-click="getWorkDetail(imgUrl)" class="work-img">
                         {{--<a href=@{{imgUrl}} class="work-img" onclick="test()">--}}
                         {{--<a href="javascript:void(0);" class="work-img" onclick="test()">--}}
-                        <img src=@{{imgUrl}} alt="...">
+                        <img src=@{{imgUrl}} alt="..." style="width:640px;height: 300px;">
 
                         <div class="caption content-caption">
                             <h3>Thumbnail label</h3>
@@ -151,4 +166,7 @@
         </div>
     </div>
     <!-- content end -->
+    <section id="copy">
+        © 2014 TANGLONG DESIGN
+    </section>
 @stop

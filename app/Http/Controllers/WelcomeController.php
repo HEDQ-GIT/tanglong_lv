@@ -50,47 +50,45 @@ class WelcomeController extends Controller
         $rst = array();
         switch ($id) {
             case 0:
-                for ($i = 0; $i < 12; $i++) {
-                    $rst[] = 'list5.jpg';
-                    $rst[] = 'list6.jpg';
-                    $rst[] = 'list7.jpg';
-                    $rst[] = 'list8.jpg';
-                    $rst[] = 'list9.jpg';
-                    $rst[] = 'list10.jpg';
-                    $rst[] = 'list11.jpg';
-                    $rst[] = 'list12.jpg';
-                    $rst[] = 'list13.jpg';
-                    $rst[] = 'list14.jpg';
+                for ($i = 0; $i < 2; $i++) {
+                    for ($j = 1; $j < 13; $j++) {
+                        $rst[] = 'list' . $j . '.jpg';
+                    }
                 }
                 break;
             case 1:
-                for ($i = 0; $i < 10; $i++) {
-                    $rst[] = 'list5.jpg';
-                    $rst[] = 'list6.jpg';
+                for ($i = 0; $i < 2; $i++) {
+                    for ($j = 13; $j < 25; $j++) {
+                        $rst[] = 'list' . $j . '.jpg';
+                    }
                 }
                 break;
             case 2:
-                for ($i = 0; $i < 10; $i++) {
-                    $rst[] = 'list7.jpg';
-                    $rst[] = 'list8.jpg';
+                for ($i = 0; $i < 2; $i++) {
+                    for ($j = 25; $j < 37; $j++) {
+                        $rst[] = 'list' . $j . '.jpg';
+                    }
                 }
                 break;
             case 3:
-                for ($i = 0; $i < 10; $i++) {
-                    $rst[] = 'list9.jpg';
-                    $rst[] = 'list10.jpg';
+                for ($i = 0; $i < 2; $i++) {
+                    for ($j = 37; $j < 49; $j++) {
+                        $rst[] = 'list' . $j . '.jpg';
+                    }
                 }
                 break;
             case 4:
-                for ($i = 0; $i < 10; $i++) {
-                    $rst[] = 'list11.jpg';
-                    $rst[] = 'list12.jpg';
+                for ($i = 0; $i < 2; $i++) {
+                    for ($j = 49; $j < 61; $j++) {
+                        $rst[] = 'list' . $j . '.jpg';
+                    }
                 }
                 break;
             case 5:
-                for ($i = 0; $i < 8; $i++) {
-                    $rst[] = 'list13.jpg';
-                    $rst[] = 'list14.jpg';
+                for ($i = 0; $i < 2; $i++) {
+                    for ($j = 53; $j < 65; $j++) {
+                        $rst[] = 'list' . $j . '.jpg';
+                    }
                 }
                 break;
         }
@@ -99,9 +97,10 @@ class WelcomeController extends Controller
         return response()->json($rst);
     }
 
-    public function getWorkDetails()
+    public function getWorkDetails(Request $request)
     {
-        return view('welcome.workDetail');
+        $url = $request->get('url');
+        return view('welcome.workDetail')->with('url', $url);
     }
 
     public function services()
@@ -109,7 +108,8 @@ class WelcomeController extends Controller
         return view('welcome.services');
     }
 
-    public function about(){
+    public function about()
+    {
         return view('welcome.about');
     }
 
@@ -137,10 +137,9 @@ class WelcomeController extends Controller
         $customEmail = $request->input('email');
         $customMsg = $request->input('message');
 
-        $data = ['email'=>$email, 'name'=>$name, 'subject'=>$subject,
-                'customName'=>$customName, 'customEmail'=>$customEmail, 'customMsg'=>$customMsg ];
-        Mail::send('emails.testmail', $data, function($message) use($data)
-        {
+        $data = ['email' => $email, 'name' => $name, 'subject' => $subject,
+            'customName' => $customName, 'customEmail' => $customEmail, 'customMsg' => $customMsg];
+        Mail::send('emails.testmail', $data, function ($message) use ($data) {
             $message->to($data['email'])->subject($data['subject']);
         });
         return 'Your email has been sent and we will serve you ASAP !';

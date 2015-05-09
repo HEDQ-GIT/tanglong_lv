@@ -17,7 +17,7 @@
         }
     </style>
     <div class="left">
-        <img src="/img/list16.jpg"/>
+        <img src="{{$url}}"/>
     </div>
     <div class="right">
         <div>

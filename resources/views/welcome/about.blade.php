@@ -88,20 +88,20 @@
 
 <ul id="slider" class="rslides">
     <li>
-        <div class="image" style="background-image: url('/img/slider1_bg.jpg');"/>
+        <div class="image" style="background: url('/img/slider_4.jpg') no-repeat center center;background-size: cover"/>
         <h1>Design Folk<span>Advertising Design Studio</span></h1>
         <h6>We dream, explore, create and craft progressive visual experiences</h6>
     </li>
     <li>
-        <div class="image" style="background-image: url('/img/slider2_bg.jpg');"/>
+        <div class="image" style="background: url('/img/slider_3.jpg') no-repeat center center;background-size: cover"/>
         <h1>Design Folk<span>Advertising Design Studio</span></h1>
         <h6>We dream, explore, create and craft progressive visual experiences</h6>
     </li>
-    <li>
-        <div class="image" style="background-image: url('/img/slider3_bg.jpg');"/>
-        <h1>Design Folk<span>Advertising Design Studio</span></h1>
-        <h6>We dream, explore, create and craft progressive visual experiences</h6>
-    </li>
+    {{--<li>--}}
+        {{--<div class="image" style="background: url('/img/slider_1.jpg') no-repeat center center;background-size: cover"/>--}}
+        {{--<h1>Design Folk<span>Advertising Design Studio</span></h1>--}}
+        {{--<h6>We dream, explore, create and craft progressive visual experiences</h6>--}}
+    {{--</li>--}}
 </ul>
 
 <section id="desc" class="wp2 animated fadeInDown">
@@ -136,48 +136,37 @@
 
 <section class="capabilities section">
     <div class="wrapper">
-        <h1>Our Capabilities</h1>
-
+        <h1>Our Working Flow</h1>
         <div class="whyslidesection">
             <div class="wrapper" id="bx-pager">
                 <a id="0" href="" class="active pager-link">
                     <div>
-                        <img class="capicon"
-                             src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-strategy.png">
-
-                        <h1>Strategy</h1>
+                        <img class="capicon" src="img/hear.png">
+                        <h1>Hear</h1>
                     </div>
                 </a>
                 <a id="1" href="" class="pager-link">
                     <div>
-                        <img class="capicon"
-                             src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-identity.png">
-
-                        <h1>Identity</h1>
+                        <img class="capicon" src="img/design.png">
+                        <h1>Design</h1>
                     </div>
                 </a>
-                <a id="2" href="" class="pager-link">
+                <a id="2"href="" class="pager-link">
                     <div>
-                        <img class="capicon"
-                             src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-print.png">
-
-                        <h1>Print</h1>
+                        <img class="capicon" src="img/plan.png">
+                        <h1>Plan</h1>
                     </div>
                 </a>
                 <a id="3" href="" class="pager-link">
                     <div>
-                        <img class="capicon"
-                             src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-digital.png">
-
-                        <h1>Digital</h1>
+                        <img class="capicon" src="img/work.png">
+                        <h1>Work</h1>
                     </div>
                 </a>
                 <a id="4" href="" class="pager-link">
                     <div>
-                        <img class="capicon"
-                             src="http://paradoxcreates.com/wp-content/themes/paradox/img/icon-packaging.png">
-
-                        <h1>Packaging</h1>
+                        <img class="capicon" src="img/delivery.png">
+                        <h1>Delivery</h1>
                     </div>
                 </a>
             </div>
@@ -186,34 +175,19 @@
                     <div class="bx-viewport">
                         <ul class="bxslider">
                             <li id="bx_0" class="visible">
-                                <div class="text">Strategy determines the direction for everything you do. Through
-                                    research and discovery, we’ll help you get a clear picture of who you are and what
-                                    you’re trying to achieve. And then we can find your unique voice.
-                                </div>
+                                <div class="text">Strategy determines the direction for everything you do. Through research and discovery, we’ll help you get a clear picture of who you are and what you’re trying to achieve. And then we can find your unique voice.</div>
                             </li>
                             <li id="bx_1">
-                                <div class="text">Establishing a strong visual brand identity is essential to
-                                    communicating who you are. We’ll help you through the process from logo creation or
-                                    rebranding, to establishing standards for consistency.
-                                </div>
+                                <div class="text">Establishing a strong visual brand identity is essential to communicating who you are. We’ll help you through the process from logo creation or rebranding, to establishing standards for consistency.</div>
                             </li>
                             <li id="bx_2">
-                                <div class="text">Everyone needs something they can hold: stationery, brochures,
-                                    postcards, annual reports, etc. We’ll help you create pieces that make a lasting
-                                    impression and reinforce the story you’re telling.
-                                </div>
+                                <div class="text">Everyone needs something they can hold: stationery, brochures, postcards, annual reports, etc. We’ll help you create pieces that make a lasting impression and reinforce the story you’re telling.</div>
                             </li>
                             <li id="bx_3">
-                                <div class="text">To stay in the game these days, an online presence is key. We’ll help
-                                    you communicate your message in the world of websites, e-newsletters, apps, social
-                                    media, and whatever they think of next.
-                                </div>
+                                <div class="text">To stay in the game these days, an online presence is key. We’ll help you communicate your message in the world of websites, e-newsletters, apps, social media, and whatever they think of next.</div>
                             </li>
                             <li id="bx_4">
-                                <div class="text">The quality, design and functionality of a package can make or break a
-                                    product. If your brand centers on a packed good, we’ll work together to create
-                                    packaging that is on point with your strategy and visual branding.
-                                </div>
+                                <div class="text">The quality, design and functionality of a package can make or break a product. If your brand centers on a packed good, we’ll work together to create packaging that is on point with your strategy and visual branding.</div>
                             </li>
                         </ul>
                     </div>
@@ -238,10 +212,8 @@
                     <i class="fa fa-flash"></i>
                 </div>
                 <div class="svc-desc">
-                    <h4 class="purple">A Personal Experience</h4>
-
-                    <p>Visit our office and meet our design consultants Account Executives and Developers. All in-house,
-                        we don’t outsource! Direct Communication is important. </p>
+                    <h4 class="purple">Investing in your future</h4>
+                    <p>We listen, we discuss, we advise. we listen to your ideas, plans and objectives and then select the best solution to fit for business.</p>
                 </div>
             </div>
         </li>
@@ -251,10 +223,8 @@
                     <i class="fa fa-heart"></i>
                 </div>
                 <div class="svc-desc">
-                    <h4 class="green">A Professional Experience</h4>
-
-                    <p>We treat you how we would like to be treated. We deliver effective business solutions that
-                        emphasise simplicity – no complicated technical jargon! ​​</p>
+                    <h4 class="green">Experience</h4>
+                    <p>We treat you how we would like to be treated. We deliver effective business solutions that emphasise simplicity – no complicated technical jargon! ​​</p>
                 </div>
             </div>
         </li>
@@ -264,11 +234,8 @@
                     <i class="fa fa-flash"></i>
                 </div>
                 <div class="svc-desc">
-                    <h4 class="blue">An Affordable Experience</h4>
-
-                    <p>We never surprise you with hidden fees. Our fixed price quotes mean what we first quote is what
-                        you pay. Our prices are a true reflection of the finishing result – the highest quality work at
-                        the lowest possible prices.​</p>
+                    <h4 class="blue">Innovative</h4>
+                    <p>We never surprise you with hidden fees. Our fixed price quotes mean what we first quote is what you pay. Our prices are a true reflection of the finishing result – the highest quality work at the lowest possible prices.​</p>
                 </div>
             </div>
         </li>
@@ -278,10 +245,8 @@
                     <i class="fa fa-flash"></i>
                 </div>
                 <div class="svc-desc">
-                    <h4 class="yellow">A Personal Experience</h4>
-
-                    <p>Visit our office and meet our design consultants Account Executives and Developers. All in-house,
-                        we don’t outsource! Direct Communication is important.</p>
+                    <h4 class="yellow">Quality</h4>
+                    <p>To us, technology is like fine art. Nobody loves it more than we do. We pledge to pamper it and give it the white glove treatment every time.</p>
                 </div>
             </div>
         </li>
@@ -291,10 +256,8 @@
                     <i class="fa fa-heart"></i>
                 </div>
                 <div class="svc-desc">
-                    <h4 class="pink">A Professional Experience</h4>
-
-                    <p>We treat you how we would like to be treated. We deliver effective business solutions that
-                        emphasise simplicity – no complicated technical jargon!​​</p>
+                    <h4 class="pink">Passionate</h4>
+                    <p>We love nothing more that working on a great project with a fantastic client. We care about our clients and can often be found working out of hours to get everything 'just right'!​​</p>
                 </div>
             </div>
         </li>
@@ -304,10 +267,8 @@
                     <i class="fa fa-desktop"></i>
                 </div>
                 <div class="svc-desc">
-                    <h4 class="red">An Affordable Experience</h4>
-
-                    <p>We never surprise you with hidden fees. Our fixed price quotes mean what we first quote is what
-                        you pay.</p>
+                    <h4 class="red">Learn from the best</h4>
+                    <p>To us, it's not just work. We encourage each other to achieve excellence in all endeavours and aren't satisfied until projects meet our own personal high standards.</p>
                 </div>
             </div>
         </li>

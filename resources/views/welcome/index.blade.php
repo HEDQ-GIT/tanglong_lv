@@ -85,6 +85,24 @@ $(function () {
             $('#slide-menu-btn').click(function () {
                 $('body').toggleClass('menu-active');
             });
+
+    $('.popup').click(function(event) {
+        var width  = 575,
+                height = 400,
+                left   = ($(window).width()  - width)  / 2,
+                top    = ($(window).height() - height) / 2,
+                url    = this.href,
+                opts   = 'status=1' +
+                        ',width='  + width  +
+                        ',height=' + height +
+                        ',top='    + top    +
+                        ',left='   + left;
+
+        window.open(url, 'twitter', opts);
+
+        return false;
+    });
+
         });
 
 
@@ -118,6 +136,9 @@ $(function () {
         //        FB end
 
 
+    </script>
+    <script>
+        window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
     </script>
 </head>
 {{--<body ng-app="app" ng-controller="MainCtrl">--}}
@@ -184,7 +205,7 @@ $(function () {
     <section id="work">
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/1f3c0f_fae86a70261f4f80a101aef4742ec621.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index1.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -192,7 +213,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/1f3c0f_0c113a44ca0f4c6fa90ff62c62d62c0f.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index2.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -200,7 +221,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/1f3c0f_50532853063549acb4b52be5dd45adf1.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index8.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -208,7 +229,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/84770f_2888228f185046ac91588bf8baf4b0b3.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index10.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -216,7 +237,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/84770f_2888228f185046ac91588bf8baf4b0b3.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index4.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -224,7 +245,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/1f3c0f_05f1b15b043d45ee90b8c2e14dc5e7f2.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index7.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -232,7 +253,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/1f3c0f_5db437a2da444f55a0197e4854893b8c.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index3.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -240,7 +261,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/1f3c0f_dc8dc5eb7579445ea959d5c007848469.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index5.jpeg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -248,7 +269,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/1f3c0f_fae86a70261f4f80a101aef4742ec621.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index9.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -256,7 +277,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/1f3c0f_0c113a44ca0f4c6fa90ff62c62d62c0f.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index6.jpeg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -264,7 +285,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/1f3c0f_50532853063549acb4b52be5dd45adf1.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index12.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -272,7 +293,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background-image: url('http://static.wix.com/media/84770f_2888228f185046ac91588bf8baf4b0b3.jpg_srz_319_239_75_22_0.5_1.2_75_jpg_srz');"></a>
+               style="background: url('/img/index13.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -316,86 +337,67 @@ $(function () {
     </section>
     <section class="svc-list" id="features">
         <h1>Our Services</h1>
-
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="col-md-4 svc wp2">
                         <div class="svc-icon blue">
-                            <i class="fa fa-desktop"></i>
+                            <i class="glyphicon glyphicon-bed"></i>
                         </div>
                         <div class="svc-content">
-                            <h1 class="subtitle">Responsive</h1>
-
-                            <p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS
-                                frameworks available, Bootstrap.</p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn blue">Read More <i
-                                        class="blue fa fa-chevron-circle-right"></i></a>
+                            <h1 class="subtitle">Lightbox Signboard</h1>
+                            <p>Lightbox signages are one of the best methods of displaying attractive images, logos, names and designs. They promote your business effectively and are ideal to illuminate advertisement or logo. </p>
+                            <a href="{{ url('services') }}" class="read-more-btn blue">Read More <i class="blue fa fa-chevron-circle-right"></i></a>
                         </div>
                     </div>
                     <div class="col-md-4 svc wp2 delay-05s">
                         <div class="svc-icon yellow">
-                            <i class="fa fa-flash"></i>
+                            <i class="fa fa-lightbulb-o"></i>
                         </div>
                         <div class="svc-content">
-                            <h1 class="subtitle">Multi-Purpose</h1>
-
-                            <p>Perfect if you run your own start-up, product or service. Boxify can showcase your
-                                business converting your visits to income.</p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="yellow read-more-btn">Read More <i
-                                        class="yellow fa fa-chevron-circle-right"></i></a>
+                            <h1 class="subtitle">LED Signboard</h1>
+                            <p>With LED-Light getting your message across, you can easily attract passersby into your shop, thus leading to more profits. Our LED-Light now for daily specials, promotions and other significant events in your store.</p>
+                            <a href="{{ url('services') }}" class="yellow read-more-btn">Read More <i class="yellow fa fa-chevron-circle-right"></i></a>
                         </div>
                     </div>
                     <div class="col-md-4 svc wp2 delay-1s">
                         <div class="svc-icon pink">
-                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cubes"></i>
                         </div>
                         <div class="svc-content">
-                            <h1 class="subtitle">Absolutely Free</h1>
-
-                            <p>As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want
-                                to thank me, simply <a href="http://peterfinlan.com/">buy me a beer</a>. </p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="pink read-more-btn">Read More <i
-                                        class="pink fa fa-chevron-circle-right"></i></a>
+                            <h1 class="subtitle">3D Wording</h1>
+                            <p>Our metal letterbox signage offers a high-quality, durable finish that is easy to clean and maintain. We understand that a well-designed letterbox can make a great visual impact on your business.</p>
+                            <a href="{{ url('services') }}" class="pink read-more-btn">Read More <i class="pink fa fa-chevron-circle-right"></i></a>
                         </div>
                     </div>
                     <div class="col-md-4 svc wp2 delay-15s">
                         <div class="svc-icon red">
-                            <i class="fa fa-desktop"></i>
+                            <i class="fa fa-flash"></i>
                         </div>
                         <div class="svc-content">
-                            <h1 class="subtitle">Responsive</h1>
-
-                            <p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS
-                                frameworks available, Bootstrap.</p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="red read-more-btn">Read More <i
-                                        class="red fa fa-chevron-circle-right"></i></a>
+                            <h1 class="subtitle">Flashing Sign</h1>
+                            <p>Flashing sign contains a sequential flashing light source where the period of time of illumination is equal to the period of non-illumination, and is used solely to attract attention in a non-informative way.</p>
+                            <a href="{{ url('services') }}" class="red read-more-btn">Read More <i class="red fa fa-chevron-circle-right"></i></a>
                         </div>
                     </div>
                     <div class="col-md-4 svc wp2 delay-2s">
                         <div class="svc-icon purple">
-                            <i class="fa fa-flash"></i>
+                            <i class="fa fa-tags"></i>
                         </div>
                         <div class="svc-content">
-                            <h1 class="subtitle">Multi-Purpose</h1>
-
-                            <p>Perfect if you run your own start-up, product or service. Boxify can showcase your
-                                business converting your visits to income.</p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="purple read-more-btn">Read More <i
-                                        class="purple fa fa-chevron-circle-right"></i></a>
+                            <h1 class="subtitle">Banner & Namecard</h1>
+                            <p>We brings to you an amazing collection of customized business cards, name cards and visiting cards printing in Singapore.</p>
+                            <a href="{{ url('services') }}" class="purple read-more-btn">Read More <i class="purple fa fa-chevron-circle-right"></i></a>
                         </div>
                     </div>
                     <div class="col-md-4 svc wp2 delay-25s">
                         <div class="svc-icon green">
-                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-newspaper-o"></i>
                         </div>
                         <div class="svc-content">
-                            <h1 class="subtitle">Absolutely Free</h1>
-
-                            <p>As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want
-                                to thank me, simply <a href="http://peterfinlan.com/">buy me a beer</a>. </p>
-                            <a href="http://tympanus.net/codrops/?p=22554" class="green read-more-btn">Read More <i
-                                        class="green fa fa-chevron-circle-right"></i></a>
+                            <h1 class="subtitle">Menu & Flyer</h1>
+                            <p>We provide individually designed concepts and style for your menu and flyer. Our team will ensure that it turns out looking fantastic every time.</p>
+                            <a href="{{ url('services') }}" class="green read-more-btn">Read More <i class="green fa fa-chevron-circle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -410,11 +412,15 @@ $(function () {
                 <p>Feel free to contact us with any questions, to provide some feedback or if you just want to say
                     hello!</p>
 
-                <p><a href="">contact@tanglong.com</a></p>
+                <p><a href="">tanglong806@gmail.com</a></p>
 
                 <ul class="list-inline banner-social-buttons">
-                    <li><a href="" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="">TWITTER</span></a>
-                    </li>
+                    <li><a
+                                href="https://twitter.com/intent/user?user_id=3189394639"
+                                class="twitter popup btn btn-default btn-lg">
+                            <i class="fa fa-twitter fa-fw"></i>
+                            <span class="">TWITTER</span>
+                        </a></li>
                     {{--<li><a href="" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="">FACEBOOK</span></a>--}}
                     {{--</li>--}}
                     <li><a onclick="facebookshare();" class="btn btn-default btn-lg"><i
