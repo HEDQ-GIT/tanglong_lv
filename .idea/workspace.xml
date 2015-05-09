@@ -59,21 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workDetail.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="workDetail.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome/workDetail.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53571427" vertical-offset="360" max-vertical-offset="1140">
+            <state vertical-scroll-proportion="-6.923077" vertical-offset="360" max-vertical-offset="1140">
               <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="works.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="works.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/works.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="874" max-vertical-offset="3090">
-              <caret line="39" column="89" selection-start-line="39" selection-start-column="89" selection-end-line="39" selection-end-column="89" />
+            <state vertical-scroll-proportion="0.8981132" vertical-offset="694" max-vertical-offset="3090">
+              <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
               <folding>
                 <marker date="1431214808454" expanded="true" signature="2928:2942" placeholder="..." />
               </folding>
@@ -642,16 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/works.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="784" max-vertical-offset="3090">
-          <caret line="39" column="89" selection-start-line="39" selection-start-column="89" selection-end-line="39" selection-end-column="89" />
-          <folding>
-            <marker date="1431214808454" expanded="true" signature="2928:2942" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.4615383" vertical-offset="2868" max-vertical-offset="4680">
@@ -670,9 +660,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome/workDetail.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53571427" vertical-offset="360" max-vertical-offset="1140">
+        <state vertical-scroll-proportion="-6.923077" vertical-offset="360" max-vertical-offset="1140">
           <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/works.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8981132" vertical-offset="694" max-vertical-offset="3090">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+          <folding>
+            <marker date="1431214808454" expanded="true" signature="2928:2942" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
