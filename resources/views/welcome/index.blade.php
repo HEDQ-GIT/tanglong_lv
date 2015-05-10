@@ -245,7 +245,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background: url('/img/index7.jpg') no-repeat center center;background-size: cover"></a>
+               style="background: url('/img/index15.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -285,7 +285,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background: url('/img/index12.jpg') no-repeat center center;background-size: cover"></a>
+               style="background: url('/img/index7.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -293,7 +293,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background: url('/img/index13.jpg') no-repeat center center;background-size: cover"></a>
+               style="background: url('/img/index16.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
