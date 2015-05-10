@@ -24,7 +24,7 @@
 
         $(function () {
             $(".rslides").responsiveSlides({
-                speed: 300
+                speed: 600
             });
         });
     </script>

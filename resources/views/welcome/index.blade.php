@@ -426,8 +426,8 @@ $(function () {
                     <li><a onclick="facebookshare();" class="btn btn-default btn-lg"><i
                                     class="fa fa-facebook fa-fw"></i> <span class="">FACEBOOK</span></a></li>
                     {{--<li><a ng-click="shareFB()" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="">FACEBOOK</span></a></li>--}}
-                    <li><a href="" class="btn btn-default btn-lg"><i class="fa fa-rss fa-fw"></i> <span
-                                    class="">BLOG</span></a></li>
+                    {{--<li><a href="" class="btn btn-default btn-lg"><i class="fa fa-rss fa-fw"></i> <span--}}
+                                    {{--class="">BLOG</span></a></li>--}}
                 </ul>
                 <p class="copy">© 2014 TANGLONG DESIGN</p>
             </div>

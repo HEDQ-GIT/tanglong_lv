@@ -87,28 +87,28 @@
 
     </section>
 
-    <section class="punchlines" id="anchor-1" data-to-animate="">
+    <section class="punchlines" data-to-animate="">
         <div class="center">
-            <h1 class="title">A tool for collectors of any kind !</h1>
+            <h1 class="title">We are delighted to give you the best smile! </h1>
             <ul>
                 <li class="first">
                     <figure><img src="/img/punchline-1.svg" alt=""></figure>
-                    <h3>A complete tool</h3>
-                    <p>We are supplying you a <strong>complete</strong> tool that will allow you to bring your collection to another level.</p>
+                    <h3>We Listen</h3>
+                    <p>We <strong>listen</strong>, we <strong>discuss</strong>, we <strong>advise</strong>. we listen to your ideas, plans and objectives and then select the <strong>best</strong> solution to fit for business.</p>
                 </li>
                 <li>
                     <figure><img src="/img/punchline-2.svg" alt=""></figure>
-                    <h3>Universe diversity</h3>
+                    <h3>We serve</h3>
                     <p>Find and explore a bunch of collectibles through <strong>multiple</strong> and <strong>various</strong> universes of collection.</p>
                 </li>
                 <li>
                     <figure><img src="/img/punchline-3.svg" alt=""></figure>
-                    <h3>Easy-to-use</h3>
+                    <h3>We do</h3>
                     <p>Thanks to its <strong>easy-to-use</strong> and <strong>clean</strong> interface, it has never been so easy to handle your collections.</p>
                 </li>
                 <li class="last">
                     <figure><img src="/img/punchline-4.svg" alt=""></figure>
-                    <h3>Quickly handy</h3>
+                    <h3>We delivery</h3>
                     <p>No instructions needed... Thanks to its carefully thought ergonomy, everybody will be able to take advantage of it.</p>
                 </li>
             </ul>

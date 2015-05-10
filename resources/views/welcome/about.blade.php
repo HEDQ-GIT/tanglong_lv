@@ -141,31 +141,31 @@
             <div class="wrapper" id="bx-pager">
                 <a id="0" href="" class="active pager-link">
                     <div>
-                        <img class="capicon" src="img/hear.png">
+                        <img class="capicon" src="/img/hear.png">
                         <h1>Hear</h1>
                     </div>
                 </a>
                 <a id="1" href="" class="pager-link">
                     <div>
-                        <img class="capicon" src="img/design.png">
+                        <img class="capicon" src="/img/design.png">
                         <h1>Design</h1>
                     </div>
                 </a>
                 <a id="2"href="" class="pager-link">
                     <div>
-                        <img class="capicon" src="img/plan.png">
+                        <img class="capicon" src="/img/plan.png">
                         <h1>Plan</h1>
                     </div>
                 </a>
                 <a id="3" href="" class="pager-link">
                     <div>
-                        <img class="capicon" src="img/work.png">
+                        <img class="capicon" src="/img/work.png">
                         <h1>Work</h1>
                     </div>
                 </a>
                 <a id="4" href="" class="pager-link">
                     <div>
-                        <img class="capicon" src="img/delivery.png">
+                        <img class="capicon" src="/img/delivery.png">
                         <h1>Delivery</h1>
                     </div>
                 </a>
