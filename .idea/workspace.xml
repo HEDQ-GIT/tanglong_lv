@@ -61,11 +61,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WelcomeController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WelcomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5833333" vertical-offset="2376" max-vertical-offset="4680">
-              <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+            <state vertical-scroll-proportion="-7.5384617" vertical-offset="2376" max-vertical-offset="4680">
+              <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/welcome/contact.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.4358974" vertical-offset="3499" max-vertical-offset="4260">
+              <caret line="125" column="25" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/contact.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.39130434" vertical-offset="8712" max-vertical-offset="11760">
+              <caret line="297" column="4" selection-start-line="297" selection-start-column="6" selection-end-line="304" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -134,7 +154,6 @@
         <option value="$PROJECT_DIR$/config/administrator.php" />
         <option value="$PROJECT_DIR$/config/mail.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/testmail.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/contact.css" />
         <option value="$PROJECT_DIR$/public/js/services.js" />
         <option value="$PROJECT_DIR$/public/js/index.js" />
         <option value="$PROJECT_DIR$/config/app.php" />
@@ -147,7 +166,6 @@
         <option value="$PROJECT_DIR$/public/css/index.css" />
         <option value="$PROJECT_DIR$/resources/lang/zh/messages.php" />
         <option value="$PROJECT_DIR$/resources/lang/en/messages.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome/contact.blade.php" />
         <option value="$PROJECT_DIR$/public/css/headermenu.css" />
         <option value="$PROJECT_DIR$/public/css/about.css" />
         <option value="$PROJECT_DIR$/public/css/aboutcomy.css" />
@@ -171,6 +189,8 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/welcome/services.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/welcome/contact.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/contact.css" />
       </list>
     </option>
   </component>
@@ -445,13 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/contact.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88032454" vertical-offset="6916" max-vertical-offset="11760">
-          <caret line="245" column="21" selection-start-line="245" selection-start-column="21" selection-end-line="245" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layout/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.3846154" vertical-offset="720" max-vertical-offset="1380">
@@ -653,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome/contact.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6334012" vertical-offset="3409" max-vertical-offset="4260">
-          <caret line="124" column="115" selection-start-line="124" selection-start-column="88" selection-end-line="124" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1290">
@@ -732,8 +738,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5833333" vertical-offset="2376" max-vertical-offset="4680">
-          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+        <state vertical-scroll-proportion="-7.5384617" vertical-offset="2376" max-vertical-offset="4680">
+          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome/contact.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.4358974" vertical-offset="3499" max-vertical-offset="4260">
+          <caret line="125" column="25" selection-start-line="125" selection-start-column="19" selection-end-line="125" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/contact.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39130434" vertical-offset="8712" max-vertical-offset="11760">
+          <caret line="297" column="4" selection-start-line="297" selection-start-column="6" selection-end-line="304" selection-end-column="36" />
           <folding />
         </state>
       </provider>

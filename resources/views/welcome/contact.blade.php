@@ -123,7 +123,7 @@
         <input id="name-input" type="text" name="name" value="" placeholder="Your name" required ng-model="formData.name" class="text">
         <input id="email-input" name="email" value="" placeholder="Your email" required type="email" ng-model="formData.email" class="text">
         <textarea name="message" rows="10" placeholder="Put your message here" required ng-model="formData.message" class="message"></textarea>
-        <input id="submit" type="submit" value="Submit">
+        <input id="submit" type="submit" class="btn btn-success" value="Submit">
         {{--@{{ formData.name }}--}}
         {{--@{{ formData.email }}--}}
         {{--@{{ formData.message }}--}}
