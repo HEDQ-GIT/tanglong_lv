@@ -50,46 +50,46 @@ class WelcomeController extends Controller
         $rst = array();
         switch ($id) {
             case 0:
-                for ($i = 0; $i < 2; $i++) {
+//                for ($i = 0; $i < 2; $i++) {
                     for ($j = 1; $j < 13; $j++) {
                         $rst[] = 'list' . $j . '.jpg';
                     }
-                }
+//                }
                 break;
             case 1:
-                for ($i = 0; $i < 2; $i++) {
+//                for ($i = 0; $i < 2; $i++) {
                     for ($j = 13; $j < 25; $j++) {
                         $rst[] = 'list' . $j . '.jpg';
                     }
-                }
+//                }
                 break;
             case 2:
-                for ($i = 0; $i < 2; $i++) {
+//                for ($i = 0; $i < 2; $i++) {
                     for ($j = 25; $j < 37; $j++) {
                         $rst[] = 'list' . $j . '.jpg';
                     }
-                }
+//                }
                 break;
             case 3:
-                for ($i = 0; $i < 2; $i++) {
+//                for ($i = 0; $i < 2; $i++) {
                     for ($j = 37; $j < 49; $j++) {
                         $rst[] = 'list' . $j . '.jpg';
                     }
-                }
+//                }
                 break;
             case 4:
-                for ($i = 0; $i < 2; $i++) {
+//                for ($i = 0; $i < 2; $i++) {
                     for ($j = 49; $j < 61; $j++) {
                         $rst[] = 'list' . $j . '.jpg';
                     }
-                }
+//                }
                 break;
             case 5:
-                for ($i = 0; $i < 2; $i++) {
+//                for ($i = 0; $i < 2; $i++) {
                     for ($j = 53; $j < 65; $j++) {
                         $rst[] = 'list' . $j . '.jpg';
                     }
-                }
+//                }
                 break;
         }
 
