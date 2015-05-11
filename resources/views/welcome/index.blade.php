@@ -9,73 +9,73 @@
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="/css/animate.css"/>
     {{--<link rel="stylesheet" type="text/css" href="/css/jquery.pagepiling.css"/>--}}
-    <link type="text/css" href="/css/jplayer.pink.flag.css" rel="stylesheet"/>
+    {{--<link type="text/css" href="/css/jplayer.pink.flag.css" rel="stylesheet"/>--}}
 
     <link rel="stylesheet" type="text/css" href="/css/index.css"/>
     {{--audio start--}}
-    <style>
-        .jp-controls {
-            width: 50%;
-            background: transparent !important;
-        }
-        .jp-interface, .jp-audio {
-            padding: 0 !important;
-            border: none !important;
-            background-color: transparent !important;
-        }
-        #jp_container_1 {
-            position: absolute;
-            top: 8px;
-            right: -60px;
-            z-index: 1000;
-        }
-        .jp-type-single .jp-play {
-            background: transparent !important;
-            text-indent: 0;
-            border-radius: 50px;
-            width: 45px !important;
-            border: 3px solid #EEEEEE;
-        }
-        *:focus {
-            outline: none !important;
-        }
-    </style>
+    {{--<style>--}}
+        {{--.jp-controls {--}}
+            {{--width: 50%;--}}
+            {{--background: transparent !important;--}}
+        {{--}--}}
+        {{--.jp-interface, .jp-audio {--}}
+            {{--padding: 0 !important;--}}
+            {{--border: none !important;--}}
+            {{--background-color: transparent !important;--}}
+        {{--}--}}
+        {{--#jp_container_1 {--}}
+            {{--position: absolute;--}}
+            {{--top: 8px;--}}
+            {{--right: -60px;--}}
+            {{--z-index: 1000;--}}
+        {{--}--}}
+        {{--.jp-type-single .jp-play {--}}
+            {{--background: transparent !important;--}}
+            {{--text-indent: 0;--}}
+            {{--border-radius: 50px;--}}
+            {{--width: 45px !important;--}}
+            {{--border: 3px solid #EEEEEE;--}}
+        {{--}--}}
+        {{--*:focus {--}}
+            {{--outline: none !important;--}}
+        {{--}--}}
+    {{--</style>--}}
     {{--audio end--}}
 
     <script src="/js/jquery-2.1.1.min.js"></script>
     {{--<script src="/js/jquery.pagepiling.min.js"></script>--}}
-    <script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>
+    {{--<script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>--}}
 
     {{--{!! Html::script('/js/angular.min.js') !!}--}}
     {{--{!! Html::script('/js/index.js') !!}--}}
     <script type="text/javascript">
 //        audio start
-        $(document).ready(function () {
-            $("#jquery_jplayer_1").jPlayer({
-                ready: function () {
-                    $(this).jPlayer("setMedia", { // Set the media
-                        m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a"
-                    }).jPlayer("play"); // Attempt to auto play the media
-                },
-                cssSelectorAncestor: "#jp_container_1",
-                swfPath: "/js",
-                supplied: "m4a, oga",
-                useStateClassSkin: true,
-                autoBlur: false,
-                smoothPlayBar: true,
-                keyEnabled: true,
-                remainingDuration: true,
-                toggleDuration: true
-            }).jPlayer("play");
-            $('.jp-play').click( function () {
-                if ($('#jp_container_1').hasClass('jp-state-playing')) {
-                    $(this).find('span.glyphicon').addClass('glyphicon-play').removeClass('glyphicon-pause');
-                }
-                else {
-                    $(this).find('span.glyphicon').addClass('glyphicon-pause').removeClass('glyphicon-play');
-                }
-            });
-        });
+//        $(document).ready(function () {
+//            $("#jquery_jplayer_1").jPlayer({
+//                ready: function () {
+//                    $(this).jPlayer("setMedia", { // Set the media
+//                        m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a"
+//                    }).jPlayer("play"); // Attempt to auto play the media
+//                },
+//                cssSelectorAncestor: "#jp_container_1",
+//                swfPath: "/js",
+//                supplied: "m4a, oga",
+//                useStateClassSkin: true,
+//                autoBlur: false,
+//                smoothPlayBar: true,
+//                keyEnabled: true,
+//                remainingDuration: true,
+//                toggleDuration: true
+//            }).jPlayer("play");
+//            $('.jp-play').click( function () {
+//                if ($('#jp_container_1').hasClass('jp-state-playing')) {
+//                    $(this).find('span.glyphicon').addClass('glyphicon-play').removeClass('glyphicon-pause');
+//                }
+//                else {
+//                    $(this).find('span.glyphicon').addClass('glyphicon-pause').removeClass('glyphicon-play');
+//                }
+//            });
+//        });
 //        audio end
 
 $(function () {
@@ -181,19 +181,19 @@ $(function () {
     </section>
 
     {{--audio start--}}
-    <div id="jquery_jplayer_1"></div>
-    <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
-        <div class="jp-type-single">
-            <div class="jp-gui jp-interface">
-                <div class="jp-controls">
-                    <button type="button" class="btn btn-default jp-play">
-                        <span class="glyphicon glyphicon-pause" style="color: white;"></span>
-                    </button>
+    {{--<div id="jquery_jplayer_1"></div>--}}
+    {{--<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">--}}
+        {{--<div class="jp-type-single">--}}
+            {{--<div class="jp-gui jp-interface">--}}
+                {{--<div class="jp-controls">--}}
+                    {{--<button type="button" class="btn btn-default jp-play">--}}
+                        {{--<span class="glyphicon glyphicon-pause" style="color: white;"></span>--}}
+                    {{--</button>--}}
                     {{--<button class="jp-play" role="button" tabindex="0">play</button>--}}
-                </div>
-            </div>
-        </div>
-    </div>
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
     {{--audio end--}}
     <section id="slider">
         <div id="large-header" class="large-header"></div>

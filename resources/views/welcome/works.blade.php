@@ -86,7 +86,7 @@
 
     <ul id="slider" class="rslides">
         <li>
-            <div class="image" style="background: url('/img/slider_2.jpg') no-repeat center center;background-size: cover"/>
+            <div class="image" style="background: url('/img/slider3_bg.jpg') no-repeat center center"/>
             <h1>Tang Long Design<span>Advertising Design Studio</span></h1>
             <h6>At Tang Long Design, each project is considered new and developed with passion!</h6>
         </li>
@@ -96,7 +96,7 @@
             {{--<h6>At Tang Long Design, each project is considered new and developed with passion!</h6>--}}
         {{--</li>--}}
         <li>
-            <div class="image" style="background: url('/img/slider3_bg.jpg') no-repeat center center fixed;"/>
+            <div class="image" style="background: url('/img/slider_2.jpg') no-repeat center center;background-size: cover"/>
             <h1>Tang Long Design<span>Advertising Design Studio</span></h1>
             <h6>At Tang Long Design, each project is considered new and developed with passion!</h6>
         </li>
