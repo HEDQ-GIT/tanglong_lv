@@ -300,41 +300,41 @@ $(function () {
             </div>
         </div>
     </section>
-    <section id="client">
-        <h1>Some Of Our Clients</h1>
+    {{--<section id="client">--}}
+        {{--<h1>Some Of Our Clients</h1>--}}
 
-        <div class="row">
-            <div class="col col-xs-12 col-sm-6 col-md-3"
-                 style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img
-                        src="/img/client-unilever-bw.png"></div>
-            <div class="col col-xs-12 col-sm-6 col-md-3"
-                 style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img
-                        src="/img/client-sharjahaiirport-bw.png"></div>
-            <div class="col col-xs-12 col-sm-6 col-md-3"
-                 style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img
-                        src="/img/client-axiom-bw.png"></div>
-            <div class="col col-xs-12 col-sm-6 col-md-3" style="border-bottom:1px dotted #cccccc"><img
-                        src="/img/client-alissa-bw.png" style="display: inline;"></div>
-            <div class="col col-xs-12 col-sm-6 col-md-3"
-                 style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img
-                        src="/img/client-alattarji-bw.png"></div>
-            <div class="col col-xs-12 col-sm-6 col-md-3"
-                 style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img
-                        src="/img/client-etisalatacademy-bw.png"></div>
-            <div class="col col-xs-12 col-sm-6 col-md-3"
-                 style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img
-                        src="/img/client-fine-bw.png"></div>
-            <div class="col col-xs-12 col-sm-6 col-md-3" style="border-bottom:1px dotted #cccccc"><img
-                        src="/img/client-kimmco-bw.png"></div>
-            <div class="col col-xs-12 col-sm-6 col-md-3" style="border-right:1px dotted #cccccc"><img
-                        src="/img/client-aliel-bw.png"></div>
-            <div class="col col-xs-12 col-sm-6 col-md-3" style="border-right:1px dotted #cccccc"><img
-                        src="/img/client-namachemicals-bw.png"></div>
-            <div class="col col-xs-12 col-sm-6 col-md-3" style="border-right:1px dotted #cccccc"><img
-                        src="/img/client-gruposarralle-bw.png"></div>
-            <div class="col col-xs-12 col-sm-6 col-md-3"><img src="/img/client-alkhoorigroup-bw.png"></div>
-        </div>
-    </section>
+        {{--<div class="row">--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3"--}}
+                 {{--style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img--}}
+                        {{--src="/img/client-unilever-bw.png"></div>--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3"--}}
+                 {{--style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img--}}
+                        {{--src="/img/client-sharjahaiirport-bw.png"></div>--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3"--}}
+                 {{--style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img--}}
+                        {{--src="/img/client-axiom-bw.png"></div>--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3" style="border-bottom:1px dotted #cccccc"><img--}}
+                        {{--src="/img/client-alissa-bw.png" style="display: inline;"></div>--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3"--}}
+                 {{--style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img--}}
+                        {{--src="/img/client-alattarji-bw.png"></div>--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3"--}}
+                 {{--style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img--}}
+                        {{--src="/img/client-etisalatacademy-bw.png"></div>--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3"--}}
+                 {{--style="border-right:1px dotted #cccccc;border-bottom:1px dotted #cccccc"><img--}}
+                        {{--src="/img/client-fine-bw.png"></div>--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3" style="border-bottom:1px dotted #cccccc"><img--}}
+                        {{--src="/img/client-kimmco-bw.png"></div>--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3" style="border-right:1px dotted #cccccc"><img--}}
+                        {{--src="/img/client-aliel-bw.png"></div>--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3" style="border-right:1px dotted #cccccc"><img--}}
+                        {{--src="/img/client-namachemicals-bw.png"></div>--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3" style="border-right:1px dotted #cccccc"><img--}}
+                        {{--src="/img/client-gruposarralle-bw.png"></div>--}}
+            {{--<div class="col col-xs-12 col-sm-6 col-md-3"><img src="/img/client-alkhoorigroup-bw.png"></div>--}}
+        {{--</div>--}}
+    {{--</section>--}}
     <section class="svc-list" id="features">
         <h1>Our Services</h1>
         <div class="container">
