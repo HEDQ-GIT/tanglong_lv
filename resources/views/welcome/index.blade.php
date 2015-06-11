@@ -261,7 +261,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background: url('/img/index5.jpeg') no-repeat center center;background-size: cover"></a>
+               style="background: url('/img/index5.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>
@@ -277,7 +277,7 @@ $(function () {
         </div>
         <div class="team-member">
             <a class="team-member-image"
-               style="background: url('/img/index6.jpeg') no-repeat center center;background-size: cover"></a>
+               style="background: url('/img/index6.jpg') no-repeat center center;background-size: cover"></a>
 
             <div class="team-member-overlay">
                 <p class="image-title">Image description here</p>

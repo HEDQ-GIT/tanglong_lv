@@ -123,11 +123,11 @@
                                 {{--<span class="badge pull-right">15</span>--}}
                             </a>
                         </li>
-                        <li class="">
-                            <a class="filter" ng-click="getImgUrl(3)">Flashing
+                        {{--<li class="">--}}
+                            {{--<a class="filter" ng-click="getImgUrl(3)">Flashing--}}
                                 {{--<span class="badge pull-right">15</span>--}}
-                            </a>
-                        </li>
+                            {{--</a>--}}
+                        {{--</li>--}}
                         <li class="">
                             <a class="filter" ng-click="getImgUrl(4)">Banner & Namecard
                                 {{--<span class="badge pull-right">13</span>--}}
